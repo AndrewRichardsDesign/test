@@ -1,0 +1,70 @@
+.hero {
+background-color: $darkGray;
+min-height: 100vh;
+
+
+
+    &__text {
+        
+        opacity: 1;
+        color: white;
+        text-align: center;
+
+
+         
+
+        h1 {
+            line-height: 1.15;
+            font-weight: 700;
+            margin-top: 38vh;
+            margin-bottom: .5rem;
+
+
+
+            @include breakpoint-up(large){
+                font-size: 5rem;
+            }
+
+            @include breakpoint-up(medium){
+                font-size: 5rem;
+                
+            }
+
+            @include breakpoint-down(medium){
+                font-size: 4rem;
+                
+            }
+    
+            @include breakpoint-down(small){
+                font-size: 2rem;
+    
+            }   
+        }
+
+
+
+
+        p {
+            font-weight: 400;
+            line-height: 1.5;
+            margin-top: .5rem;
+
+            
+
+            @include breakpoint-up(large){
+                font-size: 1.5rem;
+            }
+    
+    
+            @include breakpoint-down(medium){
+                font-size: 1.5rem;
+            }
+    
+            
+            @include breakpoint-down(small){
+                font-size: $font-med;
+                
+            }   
+        }
+    }
+}

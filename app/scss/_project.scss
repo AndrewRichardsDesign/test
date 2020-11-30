@@ -1,0 +1,102 @@
+.projects {
+
+    h2 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.15;
+        color: $darkGray;
+        margin-bottom: 2rem;
+
+
+        @include breakpoint-up(large){
+            font-size: 2rem;
+        }
+
+        @include breakpoint-down(small){
+            text-align: left; 
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+  
+.project {
+    // text-align: center;
+
+//    &__content {
+
+//    }
+    
+
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        margin-bottom: 6rem;
+
+       
+
+        @include breakpoint-up(medium){
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        
+    }
+
+   &__item {
+        border: solid 2px $gray;
+        border-radius: 0.3125rem;
+        overflow: hidden;
+        background-color: $white;
+        transition: all 150ms ease-in-out;
+        
+
+        &:hover{
+            transform: scale(1.01);
+            box-shadow:  0px 5px 10px rgba(0,0,0,.25);
+            border: solid 0px $gray;
+        }
+       }
+    
+
+    &__image {
+        height: 12.5rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+    }
+   
+    &__text {
+        padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+        color: black; 
+        @include breakpoint-up(medium){
+            padding: 1rem;             
+        }
+    }
+
+   &__company {
+    font-size: .875rem;
+    padding-bottom: .2 5rem;
+    font-weight: 400;
+   }
+
+   &__title { 
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+    font-weight: 500;
+   }
+
+   &__description  { 
+    font-size: 1rem;  
+    font-weight: 400;
+   }
+
+}

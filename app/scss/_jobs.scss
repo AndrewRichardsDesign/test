@@ -1,0 +1,85 @@
+.jobs {
+
+    text-align: center;
+
+
+         
+    @include breakpoint-up(large){
+        flex: 2;
+        order: 1;
+    }
+
+    @include breakpoint-up(medium){
+        flex: 2;
+        order: 1;
+    }
+
+    @include breakpoint-down(small){
+        flex: 2;
+        order: 1;
+    }
+
+
+    h2 {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.15;
+        color: $darkGray;
+        margin-bottom: 1rem;
+
+        @include breakpoint-up(large){
+            font-size: 2rem;
+        }
+
+        @include breakpoint-down(small){
+            text-align: left; 
+            font-size: 1.5rem; 
+            margin-bottom: .5rem;
+        }
+
+    }
+
+    // p {
+    //     line-height: 1.5;
+    //     margin-bottom: 1.25rem;
+    // }
+
+}
+
+
+
+
+.jobs-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25rem;
+    color: $darkGray;
+    font-weight: 400;
+
+
+
+    @include breakpoint-down(small){
+        justify-content: left;
+        margin-bottom: 10rem;
+    }
+}
+.job {
+// add breakpoint overrides if you need to. The padding and margin below is universal for company names.
+
+    padding: 0.3125rem;
+    margin: 0.3125rem 0.5rem 0.3125rem 0.5rem;
+
+
+    @include breakpoint-down(small){
+        padding-left: 0rem;
+        margin-left: 0rem;
+        margin-right: .5rem;
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+
+    }
+}
+
+
+
