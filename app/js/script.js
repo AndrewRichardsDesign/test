@@ -77,18 +77,88 @@ window.addEventListener("scroll", () => {
 
 
 
-
+//start with no shadow on top nav, scroll down and shadow appears
 if($(window).scrollTop() > 0 ){
   $('.header nav').css('box-shadow', '0px 0px 10px 0px black');
 }
 
 $(window).scroll(function(){
 if($(window).scrollTop() > 0 ){
-  $('.header nav').css('box-shadow', '0px 0px 10px 0px black');
+  $('myNav').css('box-shadow', '0px 0px 10px 0px black');
 } else {
-  $('.header nav').css('box-shadow', 'none');
+  $('myNav').css('box-shadow', 'none');
 }
 });
+
+
+
+//<div class="first"><button type="button" onclick="smoothScroll(document.getElementById('second'))">Click Me!</button></div>
+//<div class="second" id="second">Hi</div>
+
+function myFunction() {
+  document.getElementById("demo").style.color = "red";
+}
+
+window.smoothScroll = function(target) {
+  var scrollContainer = target;
+  do { //find scroll container
+      scrollContainer = scrollContainer.parentNode;
+      if (!scrollContainer) return;
+      scrollContainer.scrollTop += 1;
+  } while (scrollContainer.scrollTop == 0);
+
+  var targetY = 0;
+  do { //find the top of target relatively to the container
+      if (target == scrollContainer) break;
+      targetY += target.offsetTop;
+  } while (target = target.offsetParent);
+
+  scroll = function(c, a, b, i) {
+      i++; if (i > 30) return;
+      c.scrollTop = a + (b - a) / 30 * i;
+      setTimeout(function(){ scroll(c, a, b, i); }, 20);
+  }
+  // start scrolling
+  scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+
+// var smoothScroll = function(elementId) {
+//   var MIN_PIXELS_PER_STEP = 16;
+//   var MAX_SCROLL_STEPS = 30;
+//   var target = document.getElementById(elementId);
+//   var scrollContainer = target;
+//   do {
+//       scrollContainer = scrollContainer.parentNode;
+//       if (!scrollContainer) return;
+//       scrollContainer.scrollTop += 1;
+//   } while (scrollContainer.scrollTop == 0);
+
+//   var targetY = 0;
+//   do {
+//       if (target == scrollContainer) break;
+//       targetY += target.offsetTop;
+//   } while (target = target.offsetParent);
+
+//   var pixelsPerStep = Math.max(MIN_PIXELS_PER_STEP,
+//                                (targetY - scrollContainer.scrollTop) / MAX_SCROLL_STEPS);
+
+//   var stepFunc = function() {
+//       scrollContainer.scrollTop =
+//           Math.min(targetY, pixelsPerStep + scrollContainer.scrollTop);
+
+//       if (scrollContainer.scrollTop >= targetY) {
+//           return;
+//       }
+
+//       window.requestAnimationFrame(stepFunc);
+//   };
+
+//   window.requestAnimationFrame(stepFunc);
+// }
+
+
+
+
 
 
 
