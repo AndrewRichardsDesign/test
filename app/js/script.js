@@ -1,10 +1,3 @@
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
-
-
-
 // const btnHamburger = document.querySelector('#btnHamburger');
 const body = document.querySelector('body');
 const nav = document.querySelector('.header nav');
@@ -14,9 +7,6 @@ let lastScroll = 0;
 // const header = document.querySelector('.header');
 // const overlay = document.querySelector('.overlay'); 
 // const fadeElems = document.querySelectorAll('.has-fade');
-
-
-
 
 
 
@@ -88,64 +78,18 @@ window.addEventListener("scroll", () => {
 
 
 //start with no shadow on top nav, scroll down and shadow appears
-if($(window).scrollTop() > 0 ){
-  $('.header nav').css({'box-shadow': '0px 0px 10px 0px black'});
-}
-
-$(window).scroll(function(){
-if($(window).scrollTop() > 0 ){
-  $('#myNav').css('box-shadow', '0px 0px 10px 0px black');
-} else {
-  $('#myNav').css('box-shadow', 'none');
-}
-});
-
-$("button").click(function() {
-  $('html,body').animate({
-      scrollTop: $(".projects").offset().top},
-      'slow');
-});
-
-window.onload = function() {
-  if (window.jQuery) {  
-      // jQuery is loaded  
-      alert("Yeah!");
-  } else {
-      // jQuery is not loaded
-      alert("Doesn't Work");
-  }
-}
-
-
-//<div class="first"><button type="button" onclick="smoothScroll(document.getElementById('second'))">Click Me!</button></div>
-//<div class="second" id="second">Hi</div>
-
-// function myFunction() {
-//   document.getElementById("demo").style.color = "red";
+// if($(window).scrollTop() > 0 ){
+//   $('.header nav').css({'box-shadow': '0px 0px 10px 0px black'});
 // }
 
-window.smoothScroll = function(target) {
-  var scrollContainer = target;
-  do { //find scroll container
-      scrollContainer = scrollContainer.parentNode;
-      if (!scrollContainer) return;
-      scrollContainer.scrollTop += 1;
-  } while (scrollContainer.scrollTop == 0);
+// $(window).scroll(function(){
+// if($(window).scrollTop() > 0 ){
+//   $('#myNav').css('box-shadow', '0px 0px 10px 0px black');
+// } else {
+//   $('#myNav').css('box-shadow', 'none');
+// }
+// });
 
-  var targetY = 0;
-  do { //find the top of target relatively to the container
-      if (target == scrollContainer) break;
-      targetY += target.offsetTop;
-  } while (target = target.offsetParent);
-
-  scroll = function(c, a, b, i) {
-      i++; if (i > 30) return;
-      c.scrollTop = a + (b - a) / 30 * i;
-      setTimeout(function(){ scroll(c, a, b, i); }, 20);
-  }
-  // start scrolling
-  scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}
 
 // var smoothScroll = function(elementId) {
 //   var MIN_PIXELS_PER_STEP = 16;

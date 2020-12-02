@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- <script src="jquery"></script> -->
+  <!-- <script src="jquery-1.6.1.js"></script> -->
+  <!-- <script src="script.js"></script> -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/dist/style.css">
@@ -15,7 +17,10 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-
+  
+  <style>
+    html {scroll-behavior: smooth;}
+  </style>
   
 </head>
 <body>
@@ -36,26 +41,11 @@
           <span></span>
         </a> -->
 
-
-        <!-- <div class="first"><button type="button" onclick="smoothScroll(document.getElementById('second'))">Click Me!</button></div> -->
-        <div class="first"><button type="button">Click Me!</button></div>
-                <!-- <div class="second" id="second">Hi</div> -->
-
-        <!-- <p id="demo" onclick="myFunction()">Click me to change my text color.</p> -->
-
-        <!-- <script>
-        function myFunction() {
-          document.getElementById("demo").style.color = "red";
-        }
-        </script> -->
-
         <div class="header__links">
-          <a href="#">About</a><a href="#"> Projects </a><a href="#">Contact</a>
+          <a href="#">About</a><a href="#project"> Projects </a><a href="#">Contact</a>
         </div>
 
     </nav>
-
-
 
 
     <div class="header__menu has-fade">
@@ -65,7 +55,6 @@
     </div>
 
     </header>
-
 
 
 
@@ -186,13 +175,8 @@
 
 
 
-<!-- <section class="test"> -->
-<div class="second">Hi</div>
-<!-- </section> -->
-
 
 <section class="projects" id="project">
-  <!-- <div class="second" id="second">Hi</div> -->
   <div class="project__content container container--pall">
 
     <h2>Projects</h2>
