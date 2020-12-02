@@ -19,11 +19,15 @@ window.addEventListener("scroll", ()=> {
     if (currentScroll > scrollThreshold) {
 
     if (currentScroll < 0) {
+        $(".header nav").css({"box-shadow":"0px 0px 0px black"});  
         nav.classList.remove(scrollDown);
         nav.classList.add(scrollUp);
+        
     }
     else if (currentScroll == 0) {
+        $(".header nav").css({"box-shadow":"0px 0px 0px black"});  
         nav.classList.remove(scrollUp);
+        
         return;
     }
 
@@ -31,11 +35,16 @@ window.addEventListener("scroll", ()=> {
         //down
         nav.classList.remove(scrollUp);
         nav.classList.add(scrollDown);
+        $(".header nav").css({"box-shadow":"0px 0px 0px black"});
     } else if (currentScroll < lastScroll && nav.classList.contains(scrollDown)) {
         //up
         nav.classList.remove(scrollDown);
         nav.classList.add(scrollUp);
+        $(".header nav").css({"box-shadow":"0px 10px 10px black"});
     }
+}
+else{
+  $(".header nav").css({"box-shadow":"0px 0px 0px black"});  
 }
     lastScroll = currentScroll;
 
@@ -74,27 +83,17 @@ window.addEventListener("scroll", () => {
 // });
 
 
-
-
-
-
-if($(window).scrollTop() > 0 ){
-  $('.header nav').css('box-shadow', '0px 0px 10px 0px black');
-}
-
-$(window).scroll(function(){
-if($(window).scrollTop() > 0 ){
-  $('.header nav').css('box-shadow', '0px 0px 10px 0px black');
-} else {
-  $('.header nav').css('box-shadow', 'none');
-}
-});
-
-
-
-
-
-
+// $(window).scroll(function(){
+//   console.log($(window).scrollTop())
+// if ($(window).scrollTop() == 0)
+//    $(".header nav").css({"box-shadow":"none"});
+//   //  $(".header nav").css({"box-shadow":"none"});
+// else
+//    $(".header nav").css({"box-shadow":"0px 10px 10px black"});
+//   //  nav.classList.remove(scrollDown);
+//    nav.classList.add(scrollUp);
+//   //  $(".header nav").css({"opacity":0});
+// });
 
 
 // btnHamburger.addEventListener('click', function(){
