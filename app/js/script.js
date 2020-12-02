@@ -40,7 +40,7 @@ window.addEventListener("scroll", ()=> {
         //up
         nav.classList.remove(scrollDown);
         nav.classList.add(scrollUp);
-        $(".header nav").css({"box-shadow":"0px 10px 10px black"});
+        $(".header nav").css({"box-shadow":"0px 0px 10px black"});
     }
 }
 else{
