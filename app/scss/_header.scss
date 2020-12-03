@@ -25,15 +25,16 @@
         z-index: 2;
         transition: transform .3s cubic-bezier(0.86, 0, 0.07, 1);
         background-color: $darkGray;
-        padding-top: 1.0625rem;
-        padding-bottom: 1.0625rem;
+        // padding-top: 1.0625rem;
+        // padding-bottom: 1.0625rem;
+        padding: 20px 0px 20px 10px;
         align-items: center;
         justify-content: space-between;
 
 
     
         @include lg {
-            padding: 20px 20px;
+            // padding: 20px 20px;
         }
 
     
@@ -41,6 +42,7 @@
         @include smmed {
             flex-direction: column;
             justify-content: center;
+            padding: 20px 10px 10px 10px;
 
         }   
     }
@@ -51,7 +53,7 @@
     &__logo {
 
         img {
-            margin: .125rem;
+            // margin: .125rem;
             width: 4.25rem;
             height: 1.75rem;
         }
@@ -66,26 +68,28 @@
           position: relative;
           font-size: $font-sm-med; 
           font-weight: 400;
-          padding: 24px 24px 24px 24px;
+          padding: 29px 24px 29px 24px;
           color: white;
           transition: color 150ms ease-in-out;
 
           
         @include smmed {
-            &:not(:last-child){
-                margin-right: 16px;
-            } 
+            // &:not(:last-child){
+            //     margin-right: 16px;
+            // } 
+            padding: 10px 24px 11px 24px;
+            position: center; 
         }
     
-
-        @include sm {
-            &:not(:last-child){
-                margin-right: 8px;
-            } 
-            padding-left: 16px; 
-            padding-right: 16px; 
-            margin-right: 8px;
-        }
+//don't need this size because smmed is max width - applies to that breakpoint and down
+        // @include sm {
+        //     &:not(:last-child){
+        //         margin-right: 8px;
+        //     } 
+        //     padding-left: 16px; 
+        //     padding-right: 16px; 
+        //     margin-right: 8px;
+        // }
         
 
            
@@ -96,7 +100,9 @@
          
 
           &:hover {
-              color: $gray;
+            transition: all 200ms ease-in-out;
+            color: $darkGray;
+            background-color: white;
 
               &::before {
                 opacity: 1;

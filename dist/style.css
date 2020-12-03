@@ -200,20 +200,13 @@ a, a:visited, a:hover {
   transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
   background-color: #262626;
-  padding-top: 1.0625rem;
-  padding-bottom: 1.0625rem;
+  padding: 20px 0px 20px 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-@media (min-width: 1024px) {
-  .header #myNav {
-    padding: 20px 20px;
-  }
 }
 
 @media (max-width: 568px) {
@@ -225,11 +218,11 @@ a, a:visited, a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 20px 10px 10px 10px;
   }
 }
 
 .header__logo img {
-  margin: .125rem;
   width: 4.25rem;
   height: 1.75rem;
 }
@@ -238,31 +231,24 @@ a, a:visited, a:hover {
   position: relative;
   font-size: 1rem;
   font-weight: 400;
-  padding: 24px 24px 24px 24px;
+  padding: 29px 24px 29px 24px;
   color: white;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
 }
 
 @media (max-width: 568px) {
-  .header__links a:not(:last-child) {
-    margin-right: 16px;
-  }
-}
-
-@media (max-width: 414px) {
   .header__links a {
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-right: 8px;
-  }
-  .header__links a:not(:last-child) {
-    margin-right: 8px;
+    padding: 10px 24px 11px 24px;
+    position: center;
   }
 }
 
 .header__links a:hover {
-  color: #cccccc;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  color: #262626;
+  background-color: white;
 }
 
 .header__links a:hover::before {
