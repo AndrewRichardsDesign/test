@@ -1,0 +1,24 @@
+git cheat sheet
+	
+
+
+git status
+	-check the current status of file heirarchy
+
+git commit -am "<INSERT MESSAGE HERE>"
+	-creates a payload or commit with the specified message
+
+git push origin HEAD
+	-pushes to the current branch
+
+git pull
+	-pulls changes from a current branch
+
+git fetch --all
+	-grab all the new changes/branches
+
+git branch <NEW BRANCH NAME>
+	-create a new branch with this name
+
+git checkout <BRANCH NAME>
+	-change your working branch to this one
