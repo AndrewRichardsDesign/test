@@ -311,7 +311,7 @@ a, a:visited, a:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hero__text h1 {
     font-size: 5rem;
   }
@@ -452,17 +452,38 @@ a, a:visited, a:hover {
   margin-bottom: 6rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .project__grid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 565px) {
   .project__grid {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 414px) {
+  .project__grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+  .project__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 890px) {
+  .project__grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -495,7 +516,7 @@ a, a:visited, a:hover {
   color: black;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .project__text {
     padding: 1rem;
   }
