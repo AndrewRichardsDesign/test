@@ -1,32 +1,136 @@
 // Breakpoints
-@media (min-width: 64em){
+//commenting out min-width for now to see if alt approach works without it.
+// @media (min-width: 64em){  
 // styles go here
-}
+// }
+
+
+
+
+// commenting out previous breakpoint approach to test alt approach
+// // 640px, 1024px, 1400px
+// $breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
+
+// // 639px, 1023px, 1399px
+// $breakpoints-down: ("xsmall": "20em", "small": "39.9375em", "medium": "43.75em", "large": "87.4375em");
+
+
+// @mixin breakpoint-up($size){
+//      @media (min-width: map-get($breakpoints-up, $size)){
+//          @content;
+
+//      }
+// }
+
+// @mixin breakpoint-down($size){
+//     @media (max-width: map-get($breakpoints-down, $size)){
+//         @content;
+//     }
+// } 
+
+
+
+
+
+
+// alternate approach to breakpoints
+
+// Small tablets and large smartphones (landscape view)
+$screen-xsm-max: 320px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 414px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-smmed-max: 568px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 1024px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-xl-min: 1280px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-xxl-min: 1440px;
+
+// Large tablets and desktops
+$screen-xxxl-min: 1600px;
+
+
+
+
+// Small devices
+@mixin xsm {
+    @media (max-width: #{$screen-xsm-max}) {
+        @content;
+    }
+ }
+ 
+ @mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+
+ @mixin smmed {
+    @media (max-width: #{$screen-smmed-max}) {
+        @content;
+    }
+ }
+
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+ @mixin xxl {
+    @media (min-width: #{$screen-xxl-min}) {
+        @content;
+    }
+ }
+
+ @mixin xxxl {
+    @media (min-width: #{$screen-xxxl-min}) {
+        @content;
+    }
+ }
+
+// Custom devices
+@mixin rwd($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+ }
+
+
+
+
+
+
+
+
 
 // //1024px, 1280px, 1440px, 1600px
 // $breakpoints-up: ("1024": "64em", "1400": "90em", "1600": "100em");
 
 // //320px, 414px, 568px, 768px
 // $breakpoints-down: ("320": "20em", "414": "25.875em", "568": "35.5em", "768": "48em");
-
-
-
-// 640px, 1024px, 1400px
-$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
-
-// 639px, 1023px, 1399px
-$breakpoints-down: ("xsmall": "20em", "small": "39.9375em", "medium": "43.75em", "large": "87.4375em");
-
-
-@mixin breakpoint-up($size){
-     @media (min-width: map-get($breakpoints-up, $size)){
-         @content;
-
-     }
-}
-
-@mixin breakpoint-down($size){
-    @media (max-width: map-get($breakpoints-down, $size)){
-        @content;
-    }
-} 

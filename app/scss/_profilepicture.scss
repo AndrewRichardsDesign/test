@@ -1,44 +1,44 @@
-.profilepicture {
+// .profilepicture {
     
 
 
-   &__image {
-    position: relative;
-    background-image: url('/images/Website-profile-picture.jpg'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    //background-position: center;
-    margin: 0 auto;
-    margin-top: 8rem;
-    border-radius: 50%;
+//    &__image {
+//     position: relative;
+//     background-image: url('/images/Website-profile-picture.jpg'); 
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     //background-position: center;
+//     margin: 0 auto;
+//     margin-top: 8rem;
+//     border-radius: 50%;
    
 
 
-    @include breakpoint-down(small){
-        background-position: center top;
-        width: 200px;
-        height: 200px;
+//     @include breakpoint-down(small){
+//         background-position: center top;
+//         width: 200px;
+//         height: 200px;
 
-    }
+//     }
 
 
-    @include breakpoint-up(medium){
-        background-position: center top;
-        width: 300px;
-        height: 300px;
+//     @include breakpoint-up(medium){
+//         background-position: center top;
+//         width: 300px;
+//         height: 300px;
 
-    }
+//     }
     
-    @include breakpoint-up(large){
-        background-position: center top;
-        width: 500px;
-        height: 500px;
+//     @include breakpoint-up(large){
+//         background-position: center top;
+//         width: 500px;
+//         height: 500px;
 
         
-    }
+//     }
         
 
-}
+// }
 
 
-}
+// }
