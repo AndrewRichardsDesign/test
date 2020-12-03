@@ -96,6 +96,19 @@ window.addEventListener("scroll", () => {
 // });
 
 
+//start with no shadow on top nav, scroll down and shadow appears
+// if($(window).scrollTop() > 0 ){
+//   $('.header nav').css({'box-shadow': '0px 0px 10px 0px black'});
+// }
+
+// $(window).scroll(function(){
+// if($(window).scrollTop() > 0 ){
+//   $('#myNav').css('box-shadow', '0px 0px 10px 0px black');
+// } else {
+//   $('#myNav').css('box-shadow', 'none');
+// }
+// });
+
 // btnHamburger.addEventListener('click', function(){
 //     console.log('click hamburger');
 
