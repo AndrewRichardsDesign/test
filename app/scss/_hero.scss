@@ -19,49 +19,18 @@ min-height: 100vh;
             margin-top: 38vh;
             margin-bottom: .5rem;
 
-            @include xsm {
-                font-size: 2rem;
-            }
-
-            @include sm {
+        
+            @include mddown {
                 font-size: 3rem;
             }
 
-            @include smmed {
-                font-size: 4rem;
+            @include sm {
+                font-size: 2.25rem;
             }
         
             @include mdup {
                 font-size: 5rem;
             }
-        
-            
-            
-            
-
-            
-
-
-
-
-            // @include breakpoint-up(large){
-            //     font-size: 5rem;
-            // }
-
-            // @include breakpoint-up(medium){
-            //     font-size: 5rem;
-                
-            // }
-
-            // @include breakpoint-down(medium){
-            //     font-size: 4rem;
-                
-            // }
-    
-            // @include breakpoint-down(small){
-            //     font-size: 2rem;
-    
-            // }   
         }
 
 
@@ -72,22 +41,19 @@ min-height: 100vh;
             line-height: 1.5;
             margin-top: .5rem;
 
-            
+            @include mddown {
+                font-size: 1rem;
+            }
 
-            // @include breakpoint-up(large){
-            //     font-size: 1.5rem;
-            // }
-    
-    
-            // @include breakpoint-down(medium){
-            //     font-size: 1.5rem;
-            // }
-    
-            
-            // @include breakpoint-down(small){
-            //     font-size: $font-med;
-                
-            // }   
+            @include sm {
+                font-size: 1rem;
+            }
+        
+            @include mdup {
+                font-size: 1.5rem;
+            }            
+
+
         }
     }
 }

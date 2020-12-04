@@ -1,4 +1,107 @@
 // Breakpoints
+
+// alternate approach to breakpoints
+$screen-xsm-max: 320px;
+
+$screen-sm-max: 414px;
+
+$screen-smmed-max: 568px;
+
+$screen-mddown-max: 768px;
+
+$screen-mdup-min: 769px;
+
+$screen-lg-min: 1024px;
+
+$screen-xl-min: 1280px;
+
+$screen-xxl-min: 1440px;
+
+$screen-xxxl-min: 1600px;
+
+
+
+@mixin xsm {
+    @media (max-width: #{$screen-xsm-max}) {
+        @content;
+    }
+ }
+ 
+ @mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+
+ @mixin smmed {
+    @media (max-width: #{$screen-smmed-max}) {
+        @content;
+    }
+ }
+
+
+ @mixin mddown {
+    @media (max-width: #{$screen-mddown-max}) {
+        @content;
+    }
+ }
+ 
+ @mixin mdup {
+    @media (min-width: #{$screen-mdup-min}) {
+        @content;
+    }
+ }
+
+
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+ @mixin xxl {
+    @media (min-width: #{$screen-xxl-min}) {
+        @content;
+    }
+ }
+
+ @mixin xxxl {
+    @media (min-width: #{$screen-xxxl-min}) {
+        @content;
+    }
+ }
+
+ 
+// Custom devices
+@mixin custom-up($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+ }
+
+ // Custom devices
+@mixin custom-down($screen) {
+    @media (max-width: $screen+'px') {
+        @content;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
 //commenting out min-width for now to see if alt approach works without it.
 // @media (min-width: 64em){  
 // styles go here
@@ -27,126 +130,3 @@
 //         @content;
 //     }
 // } 
-
-
-
-
-
-
-// alternate approach to breakpoints
-
-// Small tablets and large smartphones (landscape view)
-$screen-xsm-max: 320px;
-
-// Small tablets and large smartphones (landscape view)
-$screen-sm-max: 414px;
-
-// Small tablets and large smartphones (landscape view)
-$screen-smmed-max: 568px;
-
-// Small tablets (portrait view)
-$screen-mddown-max: 768px;
-
-$screen-mdup-min: 769px;
-
-// Tablets and small desktops
-$screen-lg-min: 1024px;
-
-// Small tablets and large smartphones (landscape view)
-$screen-xl-min: 1280px;
-
-// Small tablets and large smartphones (landscape view)
-$screen-xxl-min: 1440px;
-
-// Large tablets and desktops
-$screen-xxxl-min: 1600px;
-
-
-
-
-// Small devices
-@mixin xsm {
-    @media (max-width: #{$screen-xsm-max}) {
-        @content;
-    }
- }
- 
- @mixin sm {
-    @media (max-width: #{$screen-sm-max}) {
-        @content;
-    }
- }
-
- @mixin smmed {
-    @media (max-width: #{$screen-smmed-max}) {
-        @content;
-    }
- }
-
- // Medium devices
- @mixin mddown {
-    @media (max-width: #{$screen-mddown-max}) {
-        @content;
-    }
- }
- 
- @mixin mdup {
-    @media (min-width: #{$screen-mdup-min}) {
-        @content;
-    }
- }
-
- // Large devices
- @mixin lg {
-    @media (min-width: #{$screen-lg-min}) {
-        @content;
-    }
- }
- 
- // Extra large devices
- @mixin xl {
-    @media (min-width: #{$screen-xl-min}) {
-        @content;
-    }
- }
-
- @mixin xxl {
-    @media (min-width: #{$screen-xxl-min}) {
-        @content;
-    }
- }
-
- @mixin xxxl {
-    @media (min-width: #{$screen-xxxl-min}) {
-        @content;
-    }
- }
-
-// Custom devices
-@mixin rwd($screen) {
-    @media (min-width: $screen+'px') {
-        @content;
-    }
- }
-
- // Custom devices
-@mixin rwddown($screen) {
-    @media (max-width: $screen+'px') {
-        @content;
-    }
- }
-
-
-
-
-
-
-
-
-
-
-// //1024px, 1280px, 1440px, 1600px
-// $breakpoints-up: ("1024": "64em", "1400": "90em", "1600": "100em");
-
-// //320px, 414px, 568px, 768px
-// $breakpoints-down: ("320": "20em", "414": "25.875em", "568": "35.5em", "768": "48em");
