@@ -101,9 +101,10 @@
 
           &:hover {
             transition: all 100ms ease-in-out;
-            color: $darkGray;
+            // color: $darkGray;
             font-weight: 500;
-            background-color: white;
+            // background-color: white;
+            background-color: $darkGray2;
 
               &::before {
                 opacity: 1;

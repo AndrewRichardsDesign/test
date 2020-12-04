@@ -71,10 +71,10 @@
         box-shadow: 0px 0px 0px 2px $gray inset;
         
         &:hover{
-            // transform: scale(1.01);
+            transform: scale(1.01);
             box-shadow:  0px 5px 10px $gray;
             // border: solid 2px rgba(255, 255, 255, 0);
-            outline: none;
+            // outline: none;
         }
        }
     

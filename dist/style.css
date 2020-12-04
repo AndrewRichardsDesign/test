@@ -247,9 +247,8 @@ a, a:visited, a:hover {
 .header__links a:hover {
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
-  color: #262626;
   font-weight: 500;
-  background-color: white;
+  background-color: #404040;
 }
 
 .header__links a:hover::before {
@@ -497,9 +496,10 @@ a, a:visited, a:hover {
 }
 
 .project__item:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   -webkit-box-shadow: 0px 5px 10px #cccccc;
           box-shadow: 0px 5px 10px #cccccc;
-  outline: none;
 }
 
 .project__image {
