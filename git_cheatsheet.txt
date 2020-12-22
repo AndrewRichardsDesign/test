@@ -5,7 +5,7 @@ git cheat sheet
 git status
 	-check the current status of file heirarchy
 
-git commit -am "<INSERT MESSAGE HERE>"
+git commit -am "<INSERT MESSAGE HERE>" (is this actually git commit -a)
 	-creates a payload or commit with the specified message
 
 git push origin HEAD

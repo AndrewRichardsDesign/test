@@ -50,6 +50,7 @@ else{
 
 }); 
 
+//scroll to Projects section
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -67,7 +68,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 450, function(){  //change this number for delay (ms)
+      }, 250, function(){  //change this number for delay (ms)
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -91,6 +92,16 @@ window.addEventListener("scroll", () => {
   document.querySelector(".hero").style.opacity = opacity;
 
 });
+
+
+
+
+
+
+
+
+
+
 
 
 //if I want the description (p) to fade independent of the h1. I need to add h1 to .hero in line 59.

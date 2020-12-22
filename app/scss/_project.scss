@@ -21,7 +21,8 @@
     }
 }
 
-  
+
+
 .project {
     // text-align: center;
 
@@ -30,20 +31,17 @@
 //    }
     
 
-
     &__grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2.5rem;
         margin-bottom: 6rem;
 
-    
-
         @include mddown {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @include rwddown(565){
+        @include custom-down(550){
             grid-template-columns: repeat(1, 1fr);
         }
 
@@ -52,29 +50,32 @@
         }
 
         @include mdup {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @include rwd(890){
             grid-template-columns: repeat(3, 1fr);
         }
 
-        
-        
+        @include xl {
+            grid-template-columns: repeat(4, 1fr);
+        }        
     }
 
+
+
+
    &__item {
-        border: solid 2px $gray;
-        border-radius: 0.3125rem;
+        // border: solid 2px $gray;
+        border-radius: 8px;
+        // outline: solid 2px $gray;
+        // outline-offset: -2px;
         overflow: hidden;
         background-color: $white;
-        transition: all 150ms ease-in-out;
+        transition: all 100ms ease-in-out;
+        box-shadow: 0px 0px 0px 2px $gray inset;
         
-
         &:hover{
             transform: scale(1.01);
-            box-shadow:  0px 5px 10px rgba(0,0,0,.25);
-            border: solid 0px $gray;
+            box-shadow:  0px 5px 10px $gray;
+            // border: solid 2px rgba(255, 255, 255, 0);
+            // outline: none;
         }
        }
     
@@ -84,15 +85,16 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+        // margin: 2px;
 
     }
    
     &__text {
         padding: 1.5rem 1.5rem 2.5rem 1.5rem;
         color: black; 
-        @include mdup {
-            padding: 1rem;             
-        }
+        // @include mdup {
+        //     padding: 1rem;             
+        // }
     }
 
    &__company {
