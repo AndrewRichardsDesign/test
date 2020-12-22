@@ -247,7 +247,6 @@ a, a:visited, a:hover {
 .header__links a:hover {
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
-  font-weight: 500;
   background-color: #404040;
 }
 
@@ -529,5 +528,67 @@ a, a:visited, a:hover {
 .project__description {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.projectpageheader {
+  background-color: #262626;
+  min-height: 50vh;
+}
+
+.projectpageheader__text {
+  opacity: 1;
+  color: white;
+  text-align: left;
+  margin-right: 40rem;
+}
+
+.projectpageheader__text h1 {
+  line-height: 1.15;
+  font-weight: 700;
+  margin-top: 10rem;
+  margin-bottom: .5rem;
+}
+
+@media (max-width: 768px) {
+  .projectpageheader__text h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .projectpageheader__text h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .projectpageheader__text h1 {
+    font-size: 5rem;
+  }
+}
+
+.projectpageheader__text p {
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: .5rem;
+  color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  .projectpageheader__text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .projectpageheader__text p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .projectpageheader__text p {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
