@@ -1,0 +1,62 @@
+.projectpageheader {
+    background-color: $darkGray;
+    min-height: 50vh;
+    
+    
+    
+        &__text {
+            
+            opacity: 1;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            margin-right: 40rem;
+    
+    
+             
+    
+            h1 {
+                line-height: 1.15;
+                font-weight: 700;
+                margin-top: 10rem;
+                margin-bottom: .5rem;
+                
+    
+            
+                @include mddown {
+                    font-size: 3rem;
+                }
+    
+                @include sm {
+                    font-size: 2.25rem;
+                }
+            
+                @include mdup {
+                    font-size: 5rem;
+                }
+            }
+    
+    
+    
+    
+            p {
+                font-weight: 400;
+                line-height: 1.5;
+                margin-top: .5rem;
+                color: $gray;
+    
+                @include mddown {
+                    font-size: 1rem;
+                }
+    
+                @include sm {
+                    font-size: 1rem;
+                }
+            
+                @include mdup {
+                    font-size: 1.5rem;
+                }            
+    
+    
+            }
+        }
+    }
