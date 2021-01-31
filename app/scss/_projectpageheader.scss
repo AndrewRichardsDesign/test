@@ -1,7 +1,7 @@
 .projectpageheader {
     background-color: $darkGray;
     min-height: 50vh;
-    
+
     
     
         &__text {
@@ -9,7 +9,7 @@
             opacity: 1;
             color: rgb(255, 255, 255);
             text-align: left;
-            margin-right: 40rem;
+            margin-right: 20rem;
     
     
              
@@ -55,8 +55,6 @@
                 @include mdup {
                     font-size: 1.5rem;
                 }            
-    
-    
             }
         }
-    }
+    }   
