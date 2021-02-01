@@ -261,7 +261,7 @@ a, a:visited, a:hover {
 }
 
 .hero {
-  background-color: #262626;
+  background-color: #31d35c;
   min-height: 100vh;
 }
 
@@ -539,7 +539,7 @@ a, a:visited, a:hover {
   opacity: 1;
   color: white;
   text-align: left;
-  margin-right: 40rem;
+  margin-right: 20rem;
 }
 
 .projectpageheader__text h1 {
