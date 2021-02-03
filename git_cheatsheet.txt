@@ -22,3 +22,9 @@ git branch <NEW BRANCH NAME>
 
 git checkout <BRANCH NAME>
 	-change your working branch to this one
+
+
+
+
+ls --- show list of folder
+rm -rf (name of folder)  --- this deletes the targeted folder
