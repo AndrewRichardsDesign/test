@@ -97,6 +97,14 @@ body.noscroll {
   overflow: hidden;
 }
 
+body ::-moz-selection {
+  background: #ffbb00;
+}
+
+body ::selection {
+  background: #ffbb00;
+}
+
 h1, h2, h3 {
   margin-top: 0px;
 }
@@ -223,6 +231,7 @@ a, a:visited, a:hover {
 }
 
 .header__logo img {
+  margin: .125rem;
   width: 64px;
   height: 50px;
 }
@@ -490,8 +499,8 @@ a, a:visited, a:hover {
   background-color: white;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
-  -webkit-box-shadow: 0px 0px 0px 2px #cccccc inset;
-          box-shadow: 0px 0px 0px 2px #cccccc inset;
+  -webkit-box-shadow: 0px 0px 0px 2px #cccccc;
+          box-shadow: 0px 0px 0px 2px #cccccc;
 }
 
 .project__item:hover {
@@ -532,20 +541,19 @@ a, a:visited, a:hover {
 
 .projectpageheader {
   background-color: #262626;
-  min-height: 50vh;
 }
 
 .projectpageheader__text {
   opacity: 1;
   color: white;
   text-align: left;
-  margin-right: 40rem;
+  margin-right: 40%;
 }
 
 .projectpageheader__text h1 {
   line-height: 1.15;
   font-weight: 700;
-  margin-top: 10rem;
+  margin-top: 20rem;
   margin-bottom: .5rem;
 }
 
@@ -571,7 +579,7 @@ a, a:visited, a:hover {
   font-weight: 400;
   line-height: 1.5;
   margin-top: .5rem;
-  color: #cccccc;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -589,6 +597,123 @@ a, a:visited, a:hover {
 @media (min-width: 769px) {
   .projectpageheader__text p {
     font-size: 1.5rem;
+  }
+}
+
+.projectpagebody__text {
+  opacity: 1;
+  color: #220808;
+  text-align: left;
+  margin-bottom: 15rem;
+}
+
+.projectpagebody__text h2 {
+  line-height: 1.15;
+  font-weight: 100;
+  margin-top: 5rem;
+  margin-bottom: .5rem;
+}
+
+@media (max-width: 768px) {
+  .projectpagebody__text h2 {
+    font-size: 2rem;
+    margin-top: 12rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .projectpagebody__text h2 {
+    font-size: 2rem;
+    margin-top: 15rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .projectpagebody__text h2 {
+    font-size: 3rem;
+  }
+}
+
+.projectpagebody__text p {
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+  color: #262626;
+}
+
+@media (max-width: 768px) {
+  .projectpagebody__text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .projectpagebody__text p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .projectpagebody__text p {
+    font-size: 1rem;
+  }
+}
+
+.projectpagebody__text .Button {
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 0px 2px #cccccc inset;
+          box-shadow: 0px 0px 0px 2px #cccccc inset;
+  cursor: pointer;
+  color: #262626;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 16px 32px;
+}
+
+.projectpagebody__text .Button:hover {
+  background-color: #ffbb00;
+  -webkit-box-shadow: 0px 0px 0px 2px #ffbb00 inset;
+          box-shadow: 0px 0px 0px 2px #ffbb00 inset;
+}
+
+.projectpagebody__text .Button:active {
+  background-color: #ffa200;
+  -webkit-box-shadow: 0px 0px 0px 2px #ffa200 inset;
+          box-shadow: 0px 0px 0px 2px #ffa200 inset;
+}
+
+.projectpagebody__image {
+  height: 25rem;
+  width: 25rem;
+  float: right;
+  margin-top: 5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 768px) {
+  .projectpagebody__image {
+    height: 10rem;
+    width: 10rem;
+    margin-top: 0rem;
+    float: left;
+  }
+}
+
+@media (max-width: 414px) {
+  .projectpagebody__image {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 0rem;
+    float: left;
+  }
+}
+
+@media (min-width: 769px) {
+  .projectpagebody__image {
+    margin-top: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
