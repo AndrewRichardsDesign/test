@@ -604,7 +604,6 @@ a, a:visited, a:hover {
   opacity: 1;
   color: #220808;
   text-align: left;
-  margin-right: 50%;
   margin-bottom: 15rem;
 }
 
@@ -618,12 +617,14 @@ a, a:visited, a:hover {
 @media (max-width: 768px) {
   .projectpagebody__text h2 {
     font-size: 2rem;
+    margin-top: 12rem;
   }
 }
 
 @media (max-width: 414px) {
   .projectpagebody__text h2 {
     font-size: 2rem;
+    margin-top: 15rem;
   }
 }
 
@@ -683,13 +684,36 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody__image {
-  height: 30rem;
-  width: 30rem;
+  height: 25rem;
+  width: 25rem;
   float: right;
   margin-top: 5rem;
-  margin-right: 5rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@media (max-width: 768px) {
+  .projectpagebody__image {
+    height: 10rem;
+    width: 10rem;
+    margin-top: 0rem;
+    float: left;
+  }
+}
+
+@media (max-width: 414px) {
+  .projectpagebody__image {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 0rem;
+    float: left;
+  }
+}
+
+@media (min-width: 769px) {
+  .projectpagebody__image {
+    margin-top: 5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
