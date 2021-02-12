@@ -63,14 +63,13 @@
 
    &__item {
         // border: solid 2px $gray;
+        border-radius: 8px;
         // outline: solid 2px $gray;
         // outline-offset: -2px;
-        // box-shadow: 0px 0px 0px 2px $gray inset;
-        border-radius: 8px;
         overflow: hidden;
         background-color: $white;
         transition: all 100ms ease-in-out;
-        box-shadow: 0px 0px 0px 2px $gray;
+        box-shadow: 0px 0px 0px 2px $gray inset;
         
         &:hover{
             transform: scale(1.01);
@@ -86,6 +85,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+        // margin: 2px;
+
     }
    
     &__text {

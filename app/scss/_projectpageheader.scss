@@ -1,15 +1,15 @@
 .projectpageheader {
     background-color: $darkGray;
-    // min-height: 50vh;
-
+    min-height: 50vh;
+    
     
     
         &__text {
             
             opacity: 1;
-            color: $white;
+            color: rgb(255, 255, 255);
             text-align: left;
-            margin-right: 40%;
+            margin-right: 40rem;
     
     
              
@@ -17,7 +17,7 @@
             h1 {
                 line-height: 1.15;
                 font-weight: 700;
-                margin-top: 20rem;
+                margin-top: 10rem;
                 margin-bottom: .5rem;
                 
     
@@ -42,8 +42,7 @@
                 font-weight: 400;
                 line-height: 1.5;
                 margin-top: .5rem;
-                margin-bottom: 1rem;
-                // color: $gray;
+                color: $gray;
     
                 @include mddown {
                     font-size: 1rem;
@@ -56,12 +55,8 @@
                 @include mdup {
                     font-size: 1.5rem;
                 }            
+    
+    
             }
-
-
-
-
-
-            
         }
-    }   
+    }
