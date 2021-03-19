@@ -1,0 +1,207 @@
+.projectpagebody {
+    
+
+    &__flex {
+
+        display: flex;
+        margin-bottom: 0rem;
+        
+    
+        @include mddown {
+            flex-wrap: wrap-reverse;
+        }
+
+        @include custom-down(550){
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @include sm {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @include mdup {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include xl {
+            grid-template-columns: repeat(4, 1fr);
+        }        
+    }
+
+
+
+    .scrolling-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin-bottom: 5rem;
+      
+        .horizontalrow1 {
+          display: inline-block;
+          margin-top: 3rem;
+          margin-bottom: 1rem;
+
+        }
+      }
+    
+
+    #h-image {
+        height: 30rem;
+        padding-right: 2rem;
+
+    }
+
+
+      .scrolling-wrapper {
+        -webkit-overflow-scrolling: touch;
+      }
+      
+
+
+
+
+
+      
+
+    &__image {
+        display: block;
+        margin-left: auto;
+        margin-right: 0rem;
+        margin-bottom: 5rem;
+
+
+        @include mddown {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0rem;
+        }
+
+
+    }
+   
+
+
+
+    #image1 {
+        height: 30rem;
+    }
+
+
+
+
+
+    &__text {
+        margin-left: 0rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        color: black;
+        margin-bottom: 2rem;
+
+    }
+
+
+   &__title {
+    font-size: 2rem;
+    line-height: 1.15;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    // margin-top: 5rem;
+    
+   }
+
+
+   &__description { 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    // margin-top: .5rem;
+    margin-bottom: 2rem;
+    color: $darkGray;
+   }
+
+
+
+   &__summary {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    color: $darkGray;
+    margin-right: 25%;
+
+    @include mddown {
+        margin-right: 0%;
+    }
+
+
+   }
+
+
+
+
+   .Button {
+        border-radius:8px;
+        box-shadow: 0px 0px 0px 2px $gray inset;
+        cursor: pointer;
+        color:$darkGray;            
+        display:inline-block;
+        font-size: 1rem;
+        padding:16px 32px;
+
+        
+    }
+    .Button:hover {
+        background-color: $yellow2;
+        box-shadow: 0px 0px 0px 2px $yellow2 inset;
+        
+
+    }
+    .Button:active {
+        background-color: $yellow4;
+        box-shadow: 0px 0px 0px 2px $yellow4 inset;
+        
+    }
+
+
+    
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
