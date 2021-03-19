@@ -15,23 +15,26 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-  
 </head>
 <body>
 
 
+
+
+  <!-- -----HEADER----- -->
+
   <header class="header">
-    <!-- <div class="overlay has-fade"></div> -->
+    
 
     <nav id="myNav"
     class="container"
     >
       <a href="/" class="header__logo">
-        <!-- <img src="images/mylogo.svg" alt="AR"> -->
         <img src="images/ARlogo.svg" alt="AR">
         </a>
+
         <div class="header__links">
-          <a href="#project"> Projects</a> <a href="about.html">About</a><a href="contact.html">Contact</a>
+          <a href="#project"> Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a>
         </div>
     </nav>
     </header>
@@ -39,6 +42,7 @@
 
 
 
+    <!-- <div w3-include-html="header.html"></div>  -->
 
 
 
@@ -46,6 +50,9 @@
 
 
 
+
+
+<!-- -----HERO----- -->
  
     <section class="hero">
       <div class="container">
@@ -67,6 +74,10 @@
 
 
 
+
+
+
+      <!-- -----JOBS----- -->
  
       <section class="jobs">
         <div class="container">
@@ -76,69 +87,65 @@
             </h2>
            
             <div class="jobs-wrapper">
-        
-            <div class="job">USAA</div>
-            <div class="job">MIT Design Lab (a design agency)</div>
-            <div class="job">Innovation by Design (a design consultancy)</div>
-            <div class="job">Philips Healthcare</div>
-            <div class="job">nth Solutions</div>
+      
+
+            <div class="job">
 
             
 
+              <a href="https://www.usaa.com/?akredirect=true" target="_blank">
+                <img class='job_image' id='job_icon1' src="images/usaa-logo.svg" alt="USAA">
+              </a>
 
+              <!-- <p>USAA</p> -->
 
-            <!-- make company names into links -->
-
-            <!-- <a href="https://www.usaa.com/?akredirect=true">USAA</a>
-            <a href="https://design.mit.edu">USAA</a>
-            <a href="https://www.usaa.com/?akredirect=true">USAA</a>
-            <a href="https://www.usaa.com/?akredirect=true">USAA</a>
-            <a href="https://www.usaa.com/?akredirect=true">USAA</a> -->
-
-
-
-
-
-
-            <!-- logos -->
-
-            <!-- <a href="https://www.usaa.com/?akredirect=true">
-              <img src="images/USAA.svg" alt="USAA" style="width:100px;height:100px;">
-            </a>
-
-            <a href="https://design.mit.edu">
-              <img src="images/MIT.svg" alt="MIT" style="width:100px;height:100px;">
-            </a>
-
-            <a href="https://www.innovationbydesign.us">
-              <img src="images/IXD.svg" alt="IXD" style="width:100px;height:100px;">
-            </a>
-
-            <a href="https://www.usa.philips.com/healthcare">
-              <img src="images/Philips.svg" alt="Philips" style="width:100px;height:100px;">
-            </a>
-
-            <a href="https://nth-solutions.com">
-              <img src="images/nth.svg" alt="nth" style="width:100px;height:100px;">
-            </a> -->
-
-
-
-
-
+            </div>
 
             
-            <!-- I didn't use this code for logos...not sure if I need it -->
+            <div class="job">
 
-            <!-- <img src="/images/USAA.svg" alt="USAA logo" style="width:128px;height:150px;">
-            <img src="/images/MIT.svg" alt="USAA logo" style="width:128px;height:150px;">
-            <img src="/images/IXD.svg" alt="USAA logo" style="width:128px;height:150px;">
-            <img src="/images/Philips.svg" alt="USAA logo" style="width:128px;height:150px;">
-            <img src="/images/nth.svg" alt="USAA logo" style="width:128px;height:150px;"> -->
+              <a href="https://design.mit.edu" target="_blank">
+                <img class='job_image' id='job_icon2' src="images/MIT.svg" alt="MIT">
+              </a>
 
-            <!-- <div class="jobs__example" img src: "/images/USAA.svg"></div> -->
+              <!-- <p>MIT Design Lab</p> -->
+
+            </div>
 
 
+            <div class="job">
+
+              <a href="https://www.innovationbydesign.us/" target="_blank">
+                <img class='job_image' id='job_icon3' src="images/IXD.svg" alt="IXD">
+              </a>
+
+              <!-- <p>Innovation by Design</p> -->
+
+            </div>
+
+            <div class="job">
+
+              <a href="https://www.usa.philips.com/healthcare" target="_blank">
+                <img class='job_image' id='job_icon4' src="images/Philips.svg" alt="Philips Healthcare">
+              </a>
+
+              <!-- <p>Philips Healthcare</p> -->
+
+            </div>
+
+
+            <div class="job">
+
+              <a href="https://nth-solutions.com/" target="_blank">
+                <img class='job_image' id='job_icon5' src="images/nth.svg" alt="nth">
+              </a>
+
+
+
+            </div>
+
+            
+       
 
           </div>
 
@@ -152,7 +159,8 @@
 
 
 
-<section class="projects" id="project">
+
+<!-- <section class="projects" id="project">
   <div class="project__content container container--pall">
 
     <h2>Projects</h2>
@@ -162,78 +170,78 @@
       <a href="appx.html" class="project__item">
         <div class="project__image" style="background-image: url('/images/placeholder1.png')"></div>
          <div class="project__text">
-           <div class="project__company">USAA</div>
-           <div class="project__title">AppX</div>
-           <div class="project__description">This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>  
+           <div class="project__company" id='company' >USAA</div>
+           <div class="project__title" id='title' >AppX</div>
+           <div class="project__description" id='description' >This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>  
          </div>
         </a>
 
         <a href="memberhome.html" class="project__item">
           <div class="project__image" style="background-image: url('/images/placeholder2.png')"></div>
           <div class="project__text">
-            <div class="project__company">USAA</div>
-            <div class="project__title">Member Home Redesign</div>
-            <div class="project__description">This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
+            <div class="project__company" id='company' >USAA</div>
+            <div class="project__title" id='title' >Member Home Redesign</div>
+            <div class="project__description" id='description' >This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
           </div>
          </a>
 
          <a href="#" class="project__item">
           <div class="project__image" style="background-image: url('/images/placeholder3.png')"></div>
           <div class="project__text">
-            <div class="project__company">MIT Design Lab</div>
-            <div class="project__title">Millennial Banking</div>
-            <div class="project__description">This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
+            <div class="project__company" id='company' >MIT Design Lab</div>
+            <div class="project__title" id='title' >Millennial Banking</div>
+            <div class="project__description" id='description' >This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
           </div>
          </a>
 
          <a href="#" class="project__item">
           <div class="project__image" style="background-image: url('/images/placeholder4.png')"></div>
           <div class="project__text">
-            <div class="project__company">MIT Design Lab</div>
-            <div class="project__title">Japan Tobacco</div>
-            <div class="project__description">This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
+            <div class="project__company" id='company' >MIT Design Lab</div>
+            <div class="project__title" id='title' >Japan Tobacco</div>
+            <div class="project__description" id='description' >This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
           </div>
          </a>
 
          <a href="#" class="project__item">
           <div class="project__image" style="background-image: url('/images/placeholder5.jpg')"></div>
           <div class="project__text">
-            <div class="project__company">MIT Design Lab</div>
-            <div class="project__title">Enerjisa</div>
-            <div class="project__description">This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
+            <div class="project__company" id='company' >MIT Design Lab</div>
+            <div class="project__title" id='title' >Enerjisa</div>
+            <div class="project__description" id='description' >This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
           </div>
          </a>
 
          <a href="#" class="project__item">
           <div class="project__image" style="background-image: url('/images/placeholder6.jpg')"></div>
           <div class="project__text">
-            <div class="project__company">Personal Project</div>
-            <div class="project__title">Google Translate</div>
-            <div class="project__description">This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
+            <div class="project__company" id='company' >Personal Project</div>
+            <div class="project__title" id='title' >Google Translate</div>
+            <div class="project__description" id='description' >This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
           </div>
          </a>
 
          <a href="#" class="project__item">
           <div class="project__image" style="background-image: url('/images/placeholder7.png')"></div>
           <div class="project__text">
-            <div class="project__company">Personal Project</div>
-            <div class="project__title">We The People</div>
-            <div class="project__description">This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
+            <div class="project__company" id='company' >Personal Project</div>
+            <div class="project__title" id='title'>We The People</div>
+            <div class="project__description" id='description' >This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
           </div>
          </a>
 
          <a href="#" class="project__item">
           <div class="project__image" style="background-image: url('/images/placeholder8.png')"></div>
           <div class="project__text">
-            <div class="project__company">Personal Project</div>
-            <div class="project__title">Vent</div>
-            <div class="project__description">This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
+            <div class="project__company" id='company' >Personal Project</div>
+            <div class="project__title" id='title' >Vent</div>
+            <div class="project__description" id='description' >This was a cool project and I did a lot of things. This project consisted of many things and it was fun.</div>
           </div>
          </a>
 
     </div>
   </div>
-</section>
+</section> -->
 
 
 
@@ -241,6 +249,70 @@
 
 
 
-  <script src="/app/js/script.js"></script>
+
+
+
+
+
+
+<!-- -----PROJECTS----- -->
+
+
+
+
+<div w3-include-html="projects.html"></div> 
+
+
+
+
+<script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain atrribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /* Make an HTTP request using the attribute value as the file name: */
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /* Exit the function: */
+        return;
+      }
+    }
+  }
+  </script> 
+
+
+
+<script>
+  includeHTML();
+  </script> 
+
+
+
+
+
+
+
+
+
+
+<script src="/app/js/script.js"></script>
+
+
+
 </body>
 </html>

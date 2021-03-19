@@ -7,6 +7,7 @@
         line-height: 1.15;
         color: $darkGray;
         margin-bottom: 2rem;
+        
 
 
         @include lg {
@@ -14,7 +15,7 @@
         }
 
         @include sm {
-            text-align: left; 
+            // text-align: left; 
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
@@ -37,17 +38,6 @@
         gap: 2.5rem;
         margin-bottom: 6rem;
 
-        @include mddown {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @include custom-down(550){
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        @include sm {
-            grid-template-columns: repeat(1, 1fr);
-        }
 
         @include mdup {
             grid-template-columns: repeat(3, 1fr);
@@ -55,7 +45,32 @@
 
         @include xl {
             grid-template-columns: repeat(4, 1fr);
-        }        
+        }   
+
+
+        @include custom-down(1023){
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+
+        @include smmed {
+            grid-template-columns: repeat(1, 1fr);
+        }   
+
+
+        // @include mddown {
+        //     grid-template-columns: repeat(1, 1fr);
+        // }
+
+        // @include custom-down(550){
+        //     grid-template-columns: repeat(1, 1fr);
+        // }
+
+        // @include sm {
+        //     grid-template-columns: repeat(1, 1fr);
+        // }
+
+     
     }
 
 
@@ -72,13 +87,37 @@
         transition: all 100ms ease-in-out;
         box-shadow: 0px 0px 0px 2px $gray;
         
+
+
         &:hover{
-            transform: scale(1.01);
+            transform: scale(1.005);
             box-shadow:  0px 5px 10px $gray;
-            // border: solid 2px rgba(255, 255, 255, 0);
-            // outline: none;
+            
+            }
+
+
+        &:hover #company{
+            text-decoration: underline 2px $darkGray;
+            // background-color:$yellow2;
+            // background-clip: content-box;
         }
-       }
+
+        &:hover #title{
+            text-decoration: underline 2px $darkGray;
+            // background-color: $yellow2;
+            // background-clip: content-box;
+        }
+
+        &:hover #description{
+            text-decoration: underline 2px $darkGray;
+            // background-color:$yellow2;
+
+            // background-clip: content-box;
+        }
+
+        }
+       
+
     
 
     &__image {
@@ -89,23 +128,29 @@
     }
    
     &__text {
-        padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+        padding: 1.5rem;
         color: black; 
-        // @include mdup {
-        //     padding: 1rem;             
-        // }
+        
+    
     }
 
    &__company {
     font-size: .875rem;
-    padding-bottom: .2 5rem;
+    padding-bottom: 0rem;
+    margin-bottom: .2rem;
     font-weight: 400;
+
+
    }
+
 
    &__title { 
     font-size: 1.5rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0rem;
+    margin-bottom: .5rem;
     font-weight: 500;
+    
+
    }
 
    &__description  { 

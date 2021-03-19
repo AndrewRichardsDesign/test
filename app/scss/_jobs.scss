@@ -32,7 +32,7 @@
         }
 
         @include sm {
-            text-align: left; 
+            // text-align: left; 
             font-size: 1.5rem; 
             margin-bottom: .5rem;
         }
@@ -51,34 +51,137 @@
 
 .jobs-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
+    padding: 0 0rem;
     margin-bottom: 25rem;
     color: $darkGray;
     font-weight: 400;
+    margin-left: 3rem;
+    margin-right: 3rem;
 
+
+    a {
+        outline: 0;
+     }
+
+
+     @include custom-down(1215){
+        justify-content: space-between;
+        
+    }
 
 
     @include sm {
-        justify-content: left;
+        // justify-content: left;
         margin-bottom: 10rem;
+        // margin-left: 0rem;
+        // margin-right: 0rem;
+        
     }
 }
+
+
+
+
 .job {
 // add breakpoint overrides if you need to. The padding and margin below is universal for company names.
 
-    padding: 0.3125rem;
-    margin: 0.3125rem 0.5rem 0.3125rem 0.5rem;
+    margin: auto;
+    // margin-left: 1.5rem;
+    // margin-right: 1.5rem;
+
+
+
+
+    // @include custom-down(1119){
+    //     margin-left: .5rem;
+    //     margin-right: .5rem;
+    // }
+
 
 
     @include sm {
         padding-left: 0rem;
-        margin-left: 0rem;
+        margin-left: .5rem;
         margin-right: .5rem;
         margin-top: .25rem;
         margin-bottom: .25rem;
+        
 
     }
+}
+
+
+
+.job_image {
+
+
+    @include lg {
+        // margin-left: .5rem;
+        // margin-right: .5rem;
+    }
+
+
+
+    @include custom-down(1215){
+        transform: scale(0.8, 0.8);  
+        margin-bottom: 1rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+
+    }
+
+
+    
+
+    // @include custom-down(1119){
+    //     transform: scale(0.8, 0.8);        
+    // }
+
+
+    // @include smmed {
+    //     transform: scale(0.8, 0.8);
+    //     // margin-left: .5rem;
+    //     // margin-right: .5rem;
+    // }
+
+    
+
+}
+
+
+
+
+#job_icon1 {
+
+height: 6rem;
+
+}
+
+#job_icon2 {
+
+    height: 6rem;
+    
+}    
+
+#job_icon3 {
+
+    height: 4rem;
+    
+}
+
+#job_icon4 {
+
+    height: 3rem;
+    
+}
+
+#job_icon5 {
+
+    height: 4rem;
+    
 }
 
 
