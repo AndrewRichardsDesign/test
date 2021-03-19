@@ -27,6 +27,10 @@ body {
         overflow: hidden;
     }
 
+    ::selection {
+        background: $yellow2;
+      }
+
 }
 
 h1, h2, h3 {
@@ -47,6 +51,7 @@ a, a:visited, a:hover {
         padding-right: 1rem;
         padding-bottom: 2.25rem;
         padding-left: 1rem;
+        // background-color:$gray3;
     }
 
     &--py {

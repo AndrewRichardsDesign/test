@@ -19,13 +19,13 @@ window.addEventListener("scroll", ()=> {
     if (currentScroll > scrollThreshold) {
 
     if (currentScroll < 0) {
-        $(".header nav").css({"box-shadow":"0px 0px 0px black"});  
+        $(".header nav").css({"box-shadow":"0px 0px 0px #0D0D0D"});  
         nav.classList.remove(scrollDown);
         nav.classList.add(scrollUp);
         
     }
     else if (currentScroll == 0) {
-        $(".header nav").css({"box-shadow":"0px 0px 0px black"});  
+        $(".header nav").css({"box-shadow":"0px 0px 0px #0D0D0D"});  
         nav.classList.remove(scrollUp);
         
         return;
@@ -35,20 +35,26 @@ window.addEventListener("scroll", ()=> {
         //down
         nav.classList.remove(scrollUp);
         nav.classList.add(scrollDown);
-        $(".header nav").css({"box-shadow":"0px 0px 0px black"});
+        $(".header nav").css({"box-shadow":"0px 0px 0px #0D0D0D"});
     } else if (currentScroll < lastScroll && nav.classList.contains(scrollDown)) {
         //up
         nav.classList.remove(scrollDown);
         nav.classList.add(scrollUp);
-        $(".header nav").css({"box-shadow":"0px 0px 10px black"});
+        $(".header nav").css({"box-shadow":"0px 0px 10px #0D0D0D"});
     }
 }
 else{
-  $(".header nav").css({"box-shadow":"0px 0px 0px black"});  
+  $(".header nav").css({"box-shadow":"0px 0px 0px #0D0D0D"});  
 }
     lastScroll = currentScroll;
 
 }); 
+
+
+
+
+
+
 
 //scroll to Projects section
 
@@ -78,6 +84,10 @@ $(document).ready(function(){
 });
 
 
+
+
+
+
 //fade header
 const checkpoint = 350;
 const checkpoint2 = 300;
@@ -92,6 +102,32 @@ window.addEventListener("scroll", () => {
   document.querySelector(".hero").style.opacity = opacity;
 
 });
+
+
+
+
+
+
+
+
+var content = document.querySelector('link[rel="import"]').import;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
