@@ -16,3 +16,9 @@ if(15 >5) {
 
 drawName(myName, letterColors, bubbleShape);
 bounceBubbles();
+
+
+
+
+
+var content = document.querySelector('link[rel="import"]').import;
