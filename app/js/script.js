@@ -111,7 +111,7 @@ window.addEventListener("scroll", () => {
 
 // I commented this line...should it be uncommented?
 
-var content = document.querySelector('link[rel="import"]').import;
+// var content = document.querySelector('link[rel="import"]').import;
 
 
 
