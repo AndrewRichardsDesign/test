@@ -1,6 +1,6 @@
 // const btnHamburger = document.querySelector('#btnHamburger');
 const body = document.querySelector('body');
-const nav = document.querySelector('.header');
+const nav = document.querySelector('.header nav');
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
@@ -8,6 +8,7 @@ let lastScroll = 0;
 // const overlay = document.querySelector('.overlay'); 
 // const fadeElems = document.querySelectorAll('.has-fade');
 
+// .header nav
 
 
 window.addEventListener("scroll", ()=> {
@@ -19,13 +20,13 @@ window.addEventListener("scroll", ()=> {
     if (currentScroll > scrollThreshold) {
 
     if (currentScroll < 0) {
-        $(".header").css({"box-shadow":"0px 0px 0px #0D0D0D"});  
+        $(".header nav").css({"box-shadow":"0px 0px 0px #0D0D0D"});  
         nav.classList.remove(scrollDown);
         nav.classList.add(scrollUp);
         
     }
     else if (currentScroll == 0) {
-        $(".header").css({"box-shadow":"0px 0px 0px #0D0D0D"});  
+        $(".header nav").css({"box-shadow":"0px 0px 0px #0D0D0D"});  
         nav.classList.remove(scrollUp);
         
         return;
@@ -35,16 +36,16 @@ window.addEventListener("scroll", ()=> {
         //down
         nav.classList.remove(scrollUp);
         nav.classList.add(scrollDown);
-        $(".header").css({"box-shadow":"0px 0px 0px #0D0D0D"});
+        $(".header nav").css({"box-shadow":"0px 0px 0px #0D0D0D"});
     } else if (currentScroll < lastScroll && nav.classList.contains(scrollDown)) {
         //up
         nav.classList.remove(scrollDown);
         nav.classList.add(scrollUp);
-        $(".header").css({"box-shadow":"0px 0px 10px #0D0D0D"});
+        $(".header nav").css({"box-shadow":"0px 0px 10px #0D0D0D"});
     }
 }
 else{
-  $(".header").css({"box-shadow":"0px 0px 0px #0D0D0D"});  
+  $(".header nav").css({"box-shadow":"0px 0px 0px #0D0D0D"});  
 }
     lastScroll = currentScroll;
 
