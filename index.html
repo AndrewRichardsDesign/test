@@ -25,29 +25,27 @@
 
 
 
+<!-- -----HEADER----- -->
 
-  <!-- -----HEADER----- -->
+<header class="header">
 
-  <header class="header">
-    
 
-    <nav id="myNav"
-    class="container"
-    >
-      <a href="index.html" class="header__logo">
-        <img src="/portfolio/images/ARlogo.svg" alt="AR">
-        </a>
-
-        <div class="header__links">
-          <a href="#project"> Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-        </div>
-    </nav>
-    </header>
+  <nav id="myNav"
+  class="container"
+  >
+    <a href="index.html" class="header__logo">
+      <img src="/portfolio/images/mylogo.svg" alt="AR">
+      </a>
+      <div class="header__links">
+          <a href="index.html">Home</a><a href="index.html"> Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </div>
+  </nav>
+  </header>
 
 
 
 
-    <!-- <div w3-include-html="header.html"></div>  -->
+    <div w3-include-html="header.html"></div> 
 
 
 
@@ -165,6 +163,99 @@
 
 
 
+
+<!-- -----PROJECTS----- -->
+
+
+
+
+<div w3-include-html="projects.html"></div> 
+
+
+
+
+<script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain atrribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /* Make an HTTP request using the attribute value as the file name: */
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /* Exit the function: */
+        return;
+      }
+    }
+  }
+  </script> 
+
+
+
+<script>
+  includeHTML();
+  </script> 
+
+
+
+
+
+<!-- changed src to href -->
+
+<!-- <script href="/portfolio/app/js/script.js" type="text/JavaScript"></script> -->
+<script src="/portfolio/app/js/script.js" type="text/JavaScript"></script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+  <!-- -----HEADER-----
+
+  <header class="header">
+    
+
+    <nav id="myNav"
+    class="container"
+    >
+      <a href="index.html" class="header__logo">
+        <img src="/portfolio/images/ARlogo.svg" alt="AR">
+        </a>
+
+        <div class="header__links">
+          <a href="#project"> Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    </header> -->
+
+
+
+
+
+
+
 <!-- <section class="projects" id="project">
   <div class="project__content container container--pall">
 
@@ -258,66 +349,3 @@
 
 
 
-
-
-<!-- -----PROJECTS----- -->
-
-
-
-
-<div w3-include-html="projects.html"></div> 
-
-
-
-
-<script>
-  function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /* Loop through a collection of all HTML elements: */
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /* Make an HTTP request using the attribute value as the file name: */
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /* Remove the attribute, and call this function once more: */
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-          }
-        }
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /* Exit the function: */
-        return;
-      }
-    }
-  }
-  </script> 
-
-
-
-<script>
-  includeHTML();
-  </script> 
-
-
-
-
-
-<!-- changed src to href -->
-
-<!-- <script href="/portfolio/app/js/script.js" type="text/JavaScript"></script> -->
-<script src="/portfolio/app/js/script.js" type="text/JavaScript"></script>
-
-
-
-
-
-</body>
-</html>
