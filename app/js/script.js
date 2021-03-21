@@ -55,7 +55,6 @@ else{
 
 
 
-
 //scroll to Projects section
 
 $(document).ready(function(){
@@ -110,23 +109,9 @@ window.addEventListener("scroll", () => {
 
 
 
-// var content = document.querySelector('link[rel="import"]').import;
+// I commented this line...should it be uncommented?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var content = document.querySelector('link[rel="import"]').import;
 
 
 
