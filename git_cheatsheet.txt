@@ -8,7 +8,7 @@ git status
 git commit -am "<INSERT MESSAGE HERE>" (is this actually git commit -a)
 	-creates a payload or commit with the specified message
 
-git push origin master (or HEADpu)
+git push origin HEAD (or master)
 	-pushes to the current branch
 
 git pull
