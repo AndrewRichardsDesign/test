@@ -375,6 +375,7 @@ a, a:visited, a:hover {
   font-size: 2rem;
   line-height: 1.15;
   color: #262626;
+  margin-top: 38vh;
   margin-bottom: 1rem;
 }
 
@@ -473,11 +474,12 @@ a, a:visited, a:hover {
 }
 
 .projects h2 {
-  text-align: center;
+  text-align: left;
   font-weight: 500;
   font-size: 2rem;
   line-height: 1.15;
   color: #262626;
+  margin-top: 10rem;
   margin-bottom: 2rem;
 }
 
@@ -800,5 +802,65 @@ a, a:visited, a:hover {
   background-color: #ffa200;
   -webkit-box-shadow: 0px 0px 0px 2px #ffa200 inset;
           box-shadow: 0px 0px 0px 2px #ffa200 inset;
+}
+
+.message {
+  background-color: white;
+  min-height: 100vh;
+}
+
+.message__text {
+  opacity: 1;
+  color: #262626;
+  text-align: center;
+}
+
+.message__text h1 {
+  line-height: 1.15;
+  font-weight: 500;
+  margin-top: 38vh;
+  margin-bottom: .5rem;
+}
+
+@media (max-width: 768px) {
+  .message__text h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .message__text h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .message__text h1 {
+    font-size: 3rem;
+  }
+}
+
+.message__text p {
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: .5rem;
+}
+
+@media (max-width: 768px) {
+  .message__text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .message__text p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .message__text p {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
