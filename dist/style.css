@@ -274,13 +274,13 @@ a, a:visited, a:hover {
 }
 
 .hero {
-  background-color: white;
+  background-color: #262626;
   min-height: 100vh;
 }
 
 .hero__text {
   opacity: 1;
-  color: #262626;
+  color: white;
   text-align: center;
 }
 
