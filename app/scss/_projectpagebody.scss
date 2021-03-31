@@ -34,30 +34,54 @@
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
-        margin-bottom: 5rem;
+        -webkit-overflow-scrolling: touch;
+
       
         .horizontalrow1 {
           display: inline-block;
           margin-top: 3rem;
-          margin-bottom: 1rem;
+
+          
 
         }
       }
     
 
-    #h-image {
+      #h-image {
         height: 30rem;
         padding-right: 2rem;
 
     }
 
 
-      .scrolling-wrapper {
+
+
+      .scrolling-wrapper2 {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin-left: auto;
         -webkit-overflow-scrolling: touch;
+
+      
+        .horizontalrow2 {
+          display: inline-block;
+          margin-top: 3rem;
+        }
       }
+
+
+
+      #h-image2 {
+        height: 30rem;
+        padding-right: 2rem;
+
+    }
+
       
 
 
+      
 
 
 
@@ -67,7 +91,8 @@
         display: block;
         margin-left: auto;
         margin-right: 0rem;
-        margin-bottom: 5rem;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
 
 
         @include mddown {
@@ -78,6 +103,9 @@
 
 
     }
+   
+
+
    
 
 
@@ -94,9 +122,47 @@
         margin-left: 0rem;
         padding: 1rem 1.5rem 1rem 1.5rem;
         color: black;
-        margin-bottom: 2rem;
+
+
+
+
+        h1 {
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        font-size: 2rem;
+        line-height: 1.15;
+        font-weight: 500;
+        }
+
+
+        p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $darkGray; 
+        max-width: 50rem;
+        margin-right: 5rem;
+        margin-top: 1rem;
+        }
 
     }
+
+
+
+
+    ul {
+        list-style-position: outside;
+        padding-left: 1rem;
+        font-size: 1.125rem;
+        max-width: 65rem;
+
+      }
+
+
+
+      li{
+        margin-bottom: 1rem;
+      }
 
 
    &__title {
@@ -104,37 +170,31 @@
     line-height: 1.15;
     font-weight: 500;
     margin-bottom: 1rem;
-    // margin-top: 5rem;
-    
+    margin-top: 5rem;
+
+
+    @include mddown {
+        margin-top: 1rem;
+    }
+
    }
+
+
 
 
    &__description { 
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.5;
-    // margin-top: .5rem;
     margin-bottom: 2rem;
+    max-width: 65rem;
     color: $darkGray;
    }
 
 
 
-   &__summary {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    color: $darkGray;
-    margin-right: 25%;
-
-    @include mddown {
-        margin-right: 0%;
-    }
 
 
-   }
 
 
 
@@ -164,11 +224,6 @@
 
 
     
-
-
-
-
-
 
 }
 

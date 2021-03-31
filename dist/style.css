@@ -706,13 +706,12 @@ a, a:visited, a:hover {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  margin-bottom: 5rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .projectpagebody .scrolling-wrapper .horizontalrow1 {
   display: inline-block;
   margin-top: 3rem;
-  margin-bottom: 1rem;
 }
 
 .projectpagebody #h-image {
@@ -720,15 +719,30 @@ a, a:visited, a:hover {
   padding-right: 2rem;
 }
 
-.projectpagebody .scrolling-wrapper {
+.projectpagebody .scrolling-wrapper2 {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-left: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.projectpagebody .scrolling-wrapper2 .horizontalrow2 {
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+.projectpagebody #h-image2 {
+  height: 30rem;
+  padding-right: 2rem;
 }
 
 .projectpagebody__image {
   display: block;
   margin-left: auto;
   margin-right: 0rem;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 @media (max-width: 768px) {
@@ -747,7 +761,35 @@ a, a:visited, a:hover {
   margin-left: 0rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
   color: black;
-  margin-bottom: 2rem;
+}
+
+.projectpagebody__text h1 {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+.projectpagebody__text p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #262626;
+  max-width: 50rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
+}
+
+.projectpagebody ul {
+  list-style-position: outside;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  max-width: 65rem;
+}
+
+.projectpagebody li {
+  margin-bottom: 1rem;
 }
 
 .projectpagebody__title {
@@ -755,30 +797,22 @@ a, a:visited, a:hover {
   line-height: 1.15;
   font-weight: 500;
   margin-bottom: 1rem;
-}
-
-.projectpagebody__description {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 2rem;
-  color: #262626;
-}
-
-.projectpagebody__summary {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
   margin-top: 5rem;
-  margin-bottom: 1rem;
-  color: #262626;
-  margin-right: 25%;
 }
 
 @media (max-width: 768px) {
-  .projectpagebody__summary {
-    margin-right: 0%;
+  .projectpagebody__title {
+    margin-top: 1rem;
   }
+}
+
+.projectpagebody__description {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  max-width: 65rem;
+  color: #262626;
 }
 
 .projectpagebody .Button {
