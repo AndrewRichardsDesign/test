@@ -274,13 +274,13 @@ a, a:visited, a:hover {
 }
 
 .hero {
-  background-color: #262626;
+  background-color: white;
   min-height: 100vh;
 }
 
 .hero__text {
   opacity: 1;
-  color: white;
+  color: #262626;
   text-align: center;
 }
 
@@ -474,12 +474,11 @@ a, a:visited, a:hover {
 }
 
 .projects h2 {
-  text-align: left;
+  text-align: center;
   font-weight: 500;
   font-size: 2rem;
   line-height: 1.15;
   color: #262626;
-  margin-top: 10rem;
   margin-bottom: 2rem;
 }
 
@@ -604,6 +603,13 @@ a, a:visited, a:hover {
   opacity: 1;
   color: #f2f2f2;
   text-align: left;
+  margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projectpageheader__text {
+    margin-left: 0rem;
+  }
 }
 
 .projectpageheader__text h1 {
@@ -622,7 +628,7 @@ a, a:visited, a:hover {
 
 .projectpageheader__text h2 {
   line-height: 1.15;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: .5rem;
   margin-bottom: 2rem;
 }
@@ -640,7 +646,7 @@ a, a:visited, a:hover {
 }
 
 .projectpageheader__text p {
-  font-weight: 400;
+  font-weight: 100;
   line-height: 1.5;
   margin-top: .5rem;
   margin-bottom: 1rem;
@@ -667,7 +673,7 @@ a, a:visited, a:hover {
   margin-bottom: 0rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1105px) {
   .projectpagebody__flex {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
@@ -702,6 +708,13 @@ a, a:visited, a:hover {
   }
 }
 
+.projectpagebody #centeredsection {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e6e6e6;
+}
+
 .projectpagebody .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -723,13 +736,14 @@ a, a:visited, a:hover {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  margin-left: auto;
   -webkit-overflow-scrolling: touch;
 }
 
 .projectpagebody .scrolling-wrapper2 .horizontalrow2 {
   display: inline-block;
   margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projectpagebody #h-image2 {
@@ -740,12 +754,12 @@ a, a:visited, a:hover {
 .projectpagebody__image {
   display: block;
   margin-left: auto;
-  margin-right: 0rem;
+  margin-right: 5rem;
   margin-top: 5rem;
   margin-bottom: 10rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1105px) {
   .projectpagebody__image {
     margin-left: auto;
     margin-right: auto;
@@ -758,9 +772,15 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody__text {
-  margin-left: 0rem;
+  margin-left: 5rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
   color: black;
+}
+
+@media (max-width: 1105px) {
+  .projectpagebody__text {
+    margin-left: 0rem;
+  }
 }
 
 .projectpagebody__text h1 {
@@ -777,7 +797,6 @@ a, a:visited, a:hover {
   line-height: 1.5;
   color: #262626;
   max-width: 50rem;
-  margin-right: 5rem;
   margin-top: 1rem;
 }
 
@@ -785,7 +804,8 @@ a, a:visited, a:hover {
   list-style-position: outside;
   padding-left: 1rem;
   font-size: 1.125rem;
-  max-width: 65rem;
+  max-width: 50rem;
+  margin-top: 3rem;
 }
 
 .projectpagebody li {
@@ -800,7 +820,7 @@ a, a:visited, a:hover {
   margin-top: 5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1105px) {
   .projectpagebody__title {
     margin-top: 1rem;
   }
@@ -813,6 +833,14 @@ a, a:visited, a:hover {
   margin-bottom: 2rem;
   max-width: 65rem;
   color: #262626;
+}
+
+.projectpagebody #topofsection {
+  margin-top: 5rem;
+}
+
+.projectpagebody #endofsection {
+  margin-bottom: 5rem;
 }
 
 .projectpagebody .Button {

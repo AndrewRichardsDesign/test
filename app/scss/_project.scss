@@ -1,12 +1,12 @@
 .projects {
 
     h2 {
-        text-align: left;
+        text-align: center;
         font-weight: 500;
         font-size: 2rem;
         line-height: 1.15;
         color: $darkGray;
-        margin-top: 10rem;
+        // margin-top: 10rem;
         margin-bottom: 2rem;
         
 
@@ -34,6 +34,7 @@
     
 
     &__grid {
+        // transform: translateY(-80px);
         display: grid;
         grid-template-columns: 1fr;
         gap: 2.5rem;

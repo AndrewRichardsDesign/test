@@ -1,7 +1,6 @@
 .hero {
-background-color: $darkGray;
-// background-color: $gray4;
-// background-color: $white;
+// background-color: $darkGray;
+background-color: $white;
 min-height: 100vh;
 
 
@@ -9,9 +8,10 @@ min-height: 100vh;
     &__text {
         
         opacity: 1;
-        color: white;
-        // color: $darkGray;
+        // color: white;
+        color: $darkGray;
         text-align: center;
+
 
 
          
@@ -20,6 +20,7 @@ min-height: 100vh;
             line-height: 1.15;
             font-weight: 700;
             margin-top: 38vh;
+            // margin-top: 25vh;
             margin-bottom: .5rem;
 
         
@@ -43,6 +44,8 @@ min-height: 100vh;
             font-weight: 400;
             line-height: 1.5;
             margin-top: .5rem;
+            
+            
 
             @include mddown {
                 font-size: 1rem;

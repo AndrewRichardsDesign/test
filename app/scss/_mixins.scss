@@ -13,6 +13,8 @@ $screen-mdup-min: 769px;
 
 $screen-lg-min: 1024px;
 
+$screen-lgdown-max: 1105px;
+
 $screen-xl-min: 1280px;
 
 $screen-xxl-min: 1440px;
@@ -45,7 +47,13 @@ $screen-xxxl-min: 1600px;
         @content;
     }
  }
- 
+
+ @mixin lgdown {
+    @media (max-width: #{$screen-lgdown-max}) {
+        @content;
+    }
+ }
+
  @mixin mdup {
     @media (min-width: #{$screen-mdup-min}) {
         @content;
