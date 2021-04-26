@@ -29,7 +29,6 @@
     }
 
 
-
     &__flex2 {
 
         display: flex;
@@ -38,6 +37,17 @@
         
     
     }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -51,12 +61,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
     .scrolling-wrapper {
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-        margin-left: 1rem;
+        // margin-left: 1rem;
         margin-right: 1rem;
 
       
@@ -64,9 +84,6 @@
           display: inline-block;
           margin-top: 3rem;
           margin-left: 1rem;
-          
-
-
           
 
         }
@@ -78,10 +95,6 @@
         padding-right: 2rem;
 
     }
-
-
-
-
 
 
       .scrolling-wrapper2 {
@@ -112,7 +125,14 @@
       
 
 
-      
+    
+
+
+
+
+
+
+
 
 
 
@@ -137,7 +157,6 @@
    
 
 
-   
 
     #image1 {
         height: 30rem;
@@ -147,22 +166,21 @@
 
 
 
-
     #image2 {
-        height: 40rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        width: 50rem;
+        height: auto;
+        // margin-right: 1rem;
+        margin-left: 1rem;
+
         
 
         @include mddown {
-            height: 30rem;
-            margin-left: 1rem;
+            width: 30rem;
             margin-right: 1rem;
         }
 
 
     }
-
 
 
 
@@ -186,8 +204,6 @@
 
 
 
-
-
     #image4 {
         height: 60rem;
         padding-left: 2rem;
@@ -206,13 +222,42 @@
 
 
 
+    #image5 {
+        width: auto;
+        height: 33rem;
+        // margin-right: 1rem;
+        margin-left: 1rem;
+
+        
+
+        @include mddown {
+            width: 30rem;
+            margin-right: 1rem;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     &__text {
         margin-left: 5rem;
         padding: 1rem 1.5rem 1rem 1.5rem;
         color: black;
-        min-width: 50%;
+        min-width: 45%;
         
 
         @include lgdown {
@@ -252,9 +297,6 @@
     }
 
 
-
-
-
     ul {
         list-style-position: outside;
         padding-left: 1rem;
@@ -287,8 +329,6 @@
    }
 
 
-
-
    &__description { 
     font-size: 1.125rem;
     font-weight: 400;
@@ -301,6 +341,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
    #topofsection{
        margin-top: 5rem;
    }
@@ -308,6 +358,17 @@
    #endofsection{
        margin-bottom: 5rem;
    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -338,6 +399,301 @@
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+//trying to set up an image slider from codepen
+
+
+
+
+    
+
+
+
+// @import "bourbon";
+// /*---- NUMBER OF SLIDE CONFIGURATION ----*/
+// $num-of-slide: 5;
+
+// .wrapper {
+//     max-width: 60em;
+//     margin: 1em auto;
+//     position: relative;
+// }
+
+// input {
+//     display: none;
+// }
+
+// .inner {
+//     width: percentage($num-of-slide);
+//     line-height: 0;
+// }
+
+// article {
+//     width: percentage(1/$num-of-slide);
+//     float: left;
+//     position: relative;
+
+//     img {
+//         width: 100%;
+//     }
+// }
+
+// /*---- SET UP CONTROL ----*/
+// .slider-prev-next-control {
+//     height: 50px;
+//     position: absolute;
+//     top: 50%;
+//     width: 100%;
+//     @include transform(translateY(-50%));
+
+//     label {
+//         display: none;
+//         width: 40px;
+//         height: 40px;
+//         border-radius: 50%;
+//         background: #fff;
+//         opacity: 0.7;
+
+//         &:hover {
+//             opacity: 1;
+//         }
+//     }
+// }
+
+// .slider-dot-control {
+//     position: absolute;
+//     width: 100%;
+//     bottom: 0;
+//     text-align: center;
+
+//     label {
+//         cursor: pointer;
+//         border-radius: 5px;
+//         display: inline-block;
+//         width: 10px;
+//         height: 10px;
+//         background: #bbb;
+//         @include transition(all 0.3s);
+
+//         &:hover {
+//             background: #ccc;
+//             border-color: #777;
+//         }
+//     }
+// }
+
+// /* Info Box */
+// .info {
+//     position: absolute;
+//     font-style: italic;
+//     line-height: 20px;
+//     opacity: 0;
+//     color: #000;
+//     text-align: left;
+//     @include transition(all 1000ms ease-out 600ms);
+
+//     h3 {
+//         color: #fcfff4;
+//         margin: 0 0 5px;
+//         font-weight: normal;
+//         font-size: 1.5em;
+//         font-style: normal;
+//     }
+
+//     &.top-left {
+//         top: 30px;
+//         left: 30px;
+//     }
+
+//     &.top-right {
+//         top: 30px;
+//         right: 30px;
+//     }
+
+//     &.bottom-left {
+//         bottom: 30px;
+//         left: 30px;
+//     }
+
+//     &.bottom-right {
+//         bottom: 30px;
+//         right: 30px;
+//     }
+// }
+
+// /* Slider Styling */
+// .slider-wrapper {
+//     width: 100%;
+//     overflow: hidden;
+//     border-radius: 5px;
+//     box-shadow: 1px 1px 4px #666;
+//     background: #fff;
+//     background: #fcfff4;
+//     @include transform(translateZ(0));
+//     @include transition(all 500ms ease-out);
+
+//     .inner {
+//         @include transform(translateZ(0));
+//         @include transition(all 800ms cubic-bezier(0.77, 0, 0.175, 1));
+//     }
+// }
+
+// /*---- SET POSITION FOR SLIDE ----*/
+// %bind-prev-next-button {
+//     font-family: FontAwesome;
+//     font-style: normal;
+//     font-weight: normal;
+//     text-decoration: inherit;
+//     margin: 0;
+//     line-height: 38px;
+//     font-size: 3em;
+//     display: block;
+//     color: #777;
+// }
+
+// %bind-next-button {
+//     @extend %bind-prev-next-button;
+//     content: "\f105";
+//     padding-left: 15px;
+// }
+
+// %bind-next-label {
+//     display: block;
+//     float: right;
+//     margin-right: 5px;
+// }
+
+// %bind-prev-label {
+//     display: block;
+//     float: left;
+//     margin-left: 5px;
+// }
+
+// %bind-prev-button {
+//     @extend %bind-prev-next-button;
+//     content: "\f104";
+//     padding-left: 8px;
+// }
+
+// %bind-background-active-dot {
+//     background: #333;
+// }
+
+// %bind-opacity-info {
+//     opacity: 1;
+// }
+
+// @for $i from 1 through $num-of-slide {
+//     #slide#{$i}:checked {
+//         & ~ .slider-wrapper .inner {
+//             margin-left: percentage(1 - $i);
+//         }
+
+//         & ~ .slider-dot-control label:nth-child(#{$i}) {
+//             @extend %bind-background-active-dot;
+//         }
+
+//         & ~ .slider-wrapper article:nth-child(#{$i}) .info {
+//             @extend %bind-opacity-info;
+//         }
+//     }
+// }
+
+// @for $i from 1 through ($num-of-slide - 1) {
+//     #slide#{$i}:checked {
+//         & ~ .slider-prev-next-control label:nth-child(#{$i +1}) {
+//             @extend %bind-next-label;
+
+//             &::after {
+//                 @extend %bind-next-button;
+//             }
+//         }
+//     }
+// }
+
+// #slide#{$num-of-slide}:checked ~ .slider-prev-next-control label:nth-child(1) {
+//     @extend %bind-next-label;
+
+//     &::after {
+//         @extend %bind-next-button;
+//     }
+// }
+
+// @for $i from 2 through $num-of-slide {
+//     #slide#{$i}:checked {
+//         & ~ .slider-prev-next-control label:nth-child(#{$i - 1}) {
+//             @extend %bind-prev-label;
+
+//             &::after {
+//                 @extend %bind-prev-button;
+//             }
+//         }
+//     }
+// }
+
+// #slide#{1}:checked ~ .slider-prev-next-control label:nth-child(#{$num-of-slide}) {
+//     @extend %bind-prev-label;
+
+//     &::after {
+//         @extend %bind-prev-button;
+//     }
+// }
+
+// /*---- TABLET ----*/
+// @media only screen and (max-width: 850px) and (min-width: 450px) {
+//     .slider-wrapper {
+//         border-radius: 0;
+//     }
+// }
+
+// /*---- MOBILE----*/
+// @media only screen and (max-width: 450px) {
+//     .slider-wrapper {
+//         border-radius: 0;
+//     }
+
+//     .slider-wrapper .info {
+//         opacity: 0;
+//     }
+// }
+
+// @media only screen and (min-width: 850px) {
+//     body {
+//         padding: 0 80px;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
