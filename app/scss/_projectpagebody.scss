@@ -28,6 +28,20 @@
         }        
     }
 
+
+
+    &__flex2 {
+
+        display: flex;
+        margin-bottom: 0rem;
+        flex-wrap: wrap;
+        
+    
+    }
+
+
+
+
     #centeredsection{
     justify-content: center;
     background-color: $gray3;
@@ -42,11 +56,16 @@
         overflow-y: hidden;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
+        margin-left: 1rem;
+        margin-right: 1rem;
 
       
         .horizontalrow1 {
           display: inline-block;
           margin-top: 3rem;
+          margin-left: 1rem;
+          
+
 
           
 
@@ -70,6 +89,7 @@
         overflow-y: hidden;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
+        margin-bottom: 5rem;
 
       
         .horizontalrow2 {
@@ -77,6 +97,7 @@
           margin-top: 3rem;
           margin-left: auto;
           margin-right: auto;
+
 
         }
       }
@@ -127,10 +148,71 @@
 
 
 
+    #image2 {
+        height: 40rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+
+        @include mddown {
+            height: 30rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+
+    }
+
+
+
+
+
+    #image3 {
+        height: 50rem;
+        width: auto;
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 1rem;
+
+        @include lgdown {
+            height: 30rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+
+    }
+
+
+
+
+
+    #image4 {
+        height: 60rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+
+        @include mddown {
+            height: 30rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+
+    }
+
+
+
+
+
+
     &__text {
         margin-left: 5rem;
         padding: 1rem 1.5rem 1rem 1.5rem;
         color: black;
+        min-width: 50%;
         
 
         @include lgdown {
@@ -146,6 +228,16 @@
         font-weight: 500;
         }
 
+
+        h2{
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+        font-size: 1.125rem;
+        line-height: 1.15;
+        font-weight: 500;
+        color: $darkGray; 
+
+        }
 
         p {
         font-size: 1.125rem;

@@ -92,26 +92,26 @@
 
 
         &:hover{
-            transform: scale(1.005);
+            // transform: scale(1.005);
             box-shadow:  0px 5px 10px $gray;
             
             }
 
 
         &:hover #company{
-            text-decoration: underline 2px $darkGray;
+            text-decoration: underline 2px $darkGray3;
             // background-color:$yellow2;
             // background-clip: content-box;
         }
 
         &:hover #title{
-            text-decoration: underline 2px $darkGray;
+            text-decoration: underline 2px $darkGray3;
             // background-color: $yellow2;
             // background-clip: content-box;
         }
 
         &:hover #description{
-            text-decoration: underline 2px $darkGray;
+            text-decoration: underline 2px $darkGray3;
             // background-color:$yellow2;
 
             // background-clip: content-box;

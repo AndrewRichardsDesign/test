@@ -543,25 +543,23 @@ a, a:visited, a:hover {
 }
 
 .project__item:hover {
-  -webkit-transform: scale(1.005);
-          transform: scale(1.005);
   -webkit-box-shadow: 0px 5px 10px #cccccc;
           box-shadow: 0px 5px 10px #cccccc;
 }
 
 .project__item:hover #company {
-  -webkit-text-decoration: underline 2px #262626;
-          text-decoration: underline 2px #262626;
+  -webkit-text-decoration: underline 2px #999999;
+          text-decoration: underline 2px #999999;
 }
 
 .project__item:hover #title {
-  -webkit-text-decoration: underline 2px #262626;
-          text-decoration: underline 2px #262626;
+  -webkit-text-decoration: underline 2px #999999;
+          text-decoration: underline 2px #999999;
 }
 
 .project__item:hover #description {
-  -webkit-text-decoration: underline 2px #262626;
-          text-decoration: underline 2px #262626;
+  -webkit-text-decoration: underline 2px #999999;
+          text-decoration: underline 2px #999999;
 }
 
 .project__image {
@@ -708,6 +706,15 @@ a, a:visited, a:hover {
   }
 }
 
+.projectpagebody__flex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .projectpagebody #centeredsection {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -720,11 +727,14 @@ a, a:visited, a:hover {
   overflow-y: hidden;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .projectpagebody .scrolling-wrapper .horizontalrow1 {
   display: inline-block;
   margin-top: 3rem;
+  margin-left: 1rem;
 }
 
 .projectpagebody #h-image {
@@ -737,6 +747,7 @@ a, a:visited, a:hover {
   overflow-y: hidden;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+  margin-bottom: 5rem;
 }
 
 .projectpagebody .scrolling-wrapper2 .horizontalrow2 {
@@ -771,10 +782,58 @@ a, a:visited, a:hover {
   height: 30rem;
 }
 
+.projectpagebody #image2 {
+  height: 40rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projectpagebody #image2 {
+    height: 30rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.projectpagebody #image3 {
+  height: 50rem;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1105px) {
+  .projectpagebody #image3 {
+    height: 30rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.projectpagebody #image4 {
+  height: 60rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projectpagebody #image4 {
+    height: 30rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 .projectpagebody__text {
   margin-left: 5rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
   color: black;
+  min-width: 50%;
 }
 
 @media (max-width: 1105px) {
@@ -789,6 +848,15 @@ a, a:visited, a:hover {
   font-size: 2rem;
   line-height: 1.15;
   font-weight: 500;
+}
+
+.projectpagebody__text h2 {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.15;
+  font-weight: 500;
+  color: #262626;
 }
 
 .projectpagebody__text p {
