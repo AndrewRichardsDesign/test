@@ -62,6 +62,11 @@
 
 
 
+    #projectsubpage{
+        margin-left: 1rem;
+    }
+
+
 
 
 
@@ -159,8 +164,8 @@
 
 
     #image1 {
-        height: 30rem;
-        
+        // width: 150rem;
+        height: 50rem;
     }
 
 
@@ -240,6 +245,62 @@
 
 
 
+
+    #image6 {
+        width: auto;
+        height: 50rem;
+        // margin-right: 1rem;
+        margin-left: 1rem;
+
+        
+
+        @include mddown {
+            height: 30rem;
+            margin-right: 1rem;
+        }
+
+
+    }
+
+
+
+
+
+
+    #image7 {
+        width: 30rem;
+        height: auto;
+        // margin-right: 1rem;
+        margin-left: 1rem;
+
+        
+
+        @include mddown {
+            height: 30rem;
+            margin-right: 1rem;
+        }
+
+
+    }
+
+
+
+
+
+    #image8 {
+        height: 20rem;
+        // margin-right: 1rem;
+        margin-left: 1rem;
+
+        
+
+        @include mddown {
+            height: 30rem;
+            margin-right: 1rem;
+        }
+
+
+    }
 
 
 

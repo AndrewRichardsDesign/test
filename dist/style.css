@@ -664,6 +664,63 @@ a, a:visited, a:hover {
   }
 }
 
+.projectpageheader2 {
+  background-color: #262626;
+}
+
+.projectpageheader2__text {
+  opacity: 1;
+  color: white;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projectpageheader2__text {
+    margin-left: 0rem;
+  }
+}
+
+.projectpageheader2__text h1 {
+  line-height: 1.15;
+  font-weight: 400;
+  margin-top: 15vh;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projectpageheader2__text h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .projectpageheader2__text h1 {
+    font-size: 3rem;
+  }
+}
+
+.projectpageheader2__text p {
+  font-weight: 100;
+  line-height: 1.5;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .projectpageheader2__text p {
+    font-size: 1rem;
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 769px) {
+  .projectpageheader2__text p {
+    font-size: 1.125rem;
+    margin-right: 25%;
+  }
+}
+
 .projectpagebody__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,6 +779,10 @@ a, a:visited, a:hover {
   background-color: #e6e6e6;
 }
 
+.projectpagebody #projectsubpage {
+  margin-left: 1rem;
+}
+
 .projectpagebody .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -778,7 +839,7 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody #image1 {
-  height: 30rem;
+  height: 50rem;
 }
 
 .projectpagebody #image2 {
@@ -836,6 +897,44 @@ a, a:visited, a:hover {
 @media (max-width: 768px) {
   .projectpagebody #image5 {
     width: 30rem;
+    margin-right: 1rem;
+  }
+}
+
+.projectpagebody #image6 {
+  width: auto;
+  height: 50rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .projectpagebody #image6 {
+    height: 30rem;
+    margin-right: 1rem;
+  }
+}
+
+.projectpagebody #image7 {
+  width: 30rem;
+  height: auto;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .projectpagebody #image7 {
+    height: 30rem;
+    margin-right: 1rem;
+  }
+}
+
+.projectpagebody #image8 {
+  height: 20rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .projectpagebody #image8 {
+    height: 30rem;
     margin-right: 1rem;
   }
 }
