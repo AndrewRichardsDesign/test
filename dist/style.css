@@ -1013,7 +1013,7 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody #image11 {
-  width: 95%;
+  height: 90vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1122,6 +1122,40 @@ a, a:visited, a:hover {
   background-color: #ffa200;
   -webkit-box-shadow: 0px 0px 0px 2px #ffa200 inset;
           box-shadow: 0px 0px 0px 2px #ffa200 inset;
+}
+
+.projectpagebody * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projectpagebody .img-comp-container {
+  position: relative;
+  height: 200px;
+  /*should be the same height as the images*/
+}
+
+.projectpagebody .img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.projectpagebody .img-comp-img img {
+  display: block;
+}
+
+.projectpagebody .img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
 }
 
 .message {
