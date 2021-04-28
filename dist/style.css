@@ -780,7 +780,10 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody #projectsubpage {
-  margin-left: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e6e6e6;
 }
 
 .projectpagebody .scrolling-wrapper {
@@ -838,8 +841,41 @@ a, a:visited, a:hover {
   }
 }
 
+.projectpagebody__image2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1105px) {
+  .projectpagebody__image2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0rem;
+  }
+}
+
+.projectpagebody .narrow {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .projectpagebody .wide {
+    display: none;
+  }
+  .projectpagebody .narrow {
+    display: block;
+  }
+}
+
 .projectpagebody #image1 {
   height: 50rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projectpagebody #image2 {
@@ -861,8 +897,6 @@ a, a:visited, a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -878,6 +912,9 @@ a, a:visited, a:hover {
   height: 60rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {
@@ -892,6 +929,9 @@ a, a:visited, a:hover {
   width: auto;
   height: 33rem;
   margin-left: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {
@@ -902,9 +942,10 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody #image6 {
-  width: auto;
   height: 50rem;
-  margin-left: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {
@@ -916,8 +957,9 @@ a, a:visited, a:hover {
 
 .projectpagebody #image7 {
   width: 30rem;
-  height: auto;
   margin-left: 1rem;
+  display: block;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {
@@ -930,6 +972,8 @@ a, a:visited, a:hover {
 .projectpagebody #image8 {
   height: 20rem;
   margin-left: 1rem;
+  display: block;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {
@@ -937,6 +981,42 @@ a, a:visited, a:hover {
     height: 30rem;
     margin-right: 1rem;
   }
+}
+
+.projectpagebody #image9 {
+  width: 100rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .projectpagebody #image9 {
+    height: 30rem;
+    margin-right: 1rem;
+  }
+}
+
+.projectpagebody #image10 {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projectpagebody #image10 {
+    height: 30rem;
+    margin-right: 1rem;
+  }
+}
+
+.projectpagebody #image11 {
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projectpagebody__text {

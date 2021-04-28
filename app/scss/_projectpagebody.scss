@@ -58,13 +58,14 @@
     }
 
 
-
-
-
-
     #projectsubpage{
-        margin-left: 1rem;
+    justify-content: center;
+     background-color: $gray3;
     }
+
+
+
+   
 
 
 
@@ -141,7 +142,7 @@
 
 
 
-      
+// for images on project pages
 
     &__image {
         display: block;
@@ -163,19 +164,85 @@
 
 
 
-    #image1 {
-        // width: 150rem;
-        height: 50rem;
+
+
+// for images on project sub pages
+
+    &__image2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+
+
+
+        @include lgdown {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0rem;
+        }
+
+
+
+
     }
 
 
 
 
+
+
+
+
+    
+
+    .narrow{
+        display: none;
+
+     }
+     
+
+     @media only screen and (max-width: 500px){           
+         
+        .wide{
+          display: none;
+        }
+     
+        .narrow{
+          display: block;
+        }
+
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #image1 {
+        height: 50rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+//used in overview, view types, personalized marketing, external, activity, horizontal scroll and static images
     #image2 {
         width: 50rem;
         height: auto;
-        // margin-right: 1rem;
         margin-left: 1rem;
+        
 
         
 
@@ -188,15 +255,15 @@
     }
 
 
-
-
+//used in responsive images horizontal scroll
     #image3 {
         height: 50rem;
         width: auto;
         justify-content: center;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        // padding-left: 2rem;
+        // padding-right: 2rem;
         margin-bottom: 1rem;
+        
 
         @include lgdown {
             height: 30rem;
@@ -213,6 +280,9 @@
         height: 60rem;
         padding-left: 2rem;
         padding-right: 2rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         
 
         @include mddown {
@@ -232,6 +302,9 @@
         height: 33rem;
         // margin-right: 1rem;
         margin-left: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 
         
 
@@ -247,10 +320,10 @@
 
 
     #image6 {
-        width: auto;
         height: 50rem;
-        // margin-right: 1rem;
-        margin-left: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 
         
 
@@ -261,17 +334,16 @@
 
 
     }
-
-
 
 
 
 
     #image7 {
         width: 30rem;
-        height: auto;
-        // margin-right: 1rem;
         margin-left: 1rem;
+        display: block;
+        // margin-left: auto;
+        margin-right: auto;
 
         
 
@@ -282,16 +354,15 @@
 
 
     }
-
-
 
 
 
     #image8 {
         height: 20rem;
-        // margin-right: 1rem;
         margin-left: 1rem;
-
+        display: block;
+        // margin-left: auto;
+        margin-right: auto;
         
 
         @include mddown {
@@ -305,6 +376,67 @@
 
 
 
+    #image9 {
+        width: 100rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mddown {
+            height: 30rem;
+            margin-right: 1rem;
+        }
+
+
+    }
+
+
+
+
+    #image10 {
+        // width: 80rem;
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        
+
+        @include mddown {
+            height: 30rem;
+            margin-right: 1rem;
+        }
+
+
+    }
+
+
+
+
+
+    #image11 {
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        // @include mddown {
+        //     height: 30rem;
+        //     margin-right: 1rem;
+        // }
+
+
+    }
+
+
+
+
+
+
+
+
+
+    
 
 
 
@@ -320,6 +452,8 @@
         color: black;
         min-width: 45%;
         
+
+
 
         @include lgdown {
             margin-left: 0rem;
@@ -354,6 +488,11 @@
         // margin-right: 5rem;
         margin-top: 1rem;
         }
+
+
+        
+
+
 
     }
 

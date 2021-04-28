@@ -192,6 +192,30 @@ window.onload = function() {
 
 
 
+//tabs for showing grid and list view in Member Home project page
+
+
+// function openView(viewName) {
+//   var i;
+//   var x = document.getElementsByClassName("view");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
+//   document.getElementById(viewName).style.display = "block";
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
