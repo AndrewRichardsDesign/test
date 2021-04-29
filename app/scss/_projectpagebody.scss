@@ -259,10 +259,11 @@
     #image3 {
         height: 50rem;
         width: auto;
-        justify-content: center;
-        // padding-left: 2rem;
-        // padding-right: 2rem;
+        padding-left: 2rem;
         margin-bottom: 1rem;
+        // justify-content: center;
+        // padding-right: 2rem;
+        
         
 
         @include lgdown {
