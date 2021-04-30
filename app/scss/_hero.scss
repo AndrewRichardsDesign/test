@@ -1,15 +1,21 @@
+.body{
+    background-color: $darkGray0;
+}
+
+
+
 .hero {
-// background-color: $darkGray;
-background-color: $white;
-min-height: 100vh;
+background-color: $darkGray0;
+// background-color: $white;
+// min-height: 100vh;
 
 
 
     &__text {
         
         opacity: 1;
-        // color: white;
-        color: $darkGray;
+        color: white;
+        // color: $darkGray;
         text-align: center;
 
 
@@ -17,10 +23,10 @@ min-height: 100vh;
          
 
         h1 {
+            font-family: 'Amatic SC', cursive;
             line-height: 1.15;
             font-weight: 700;
-            margin-top: 38vh;
-            // margin-top: 25vh;
+            margin-top: 30vh;
             margin-bottom: .5rem;
 
         
@@ -33,7 +39,7 @@ min-height: 100vh;
             }
         
             @include mdup {
-                font-size: 5rem;
+                font-size: 12rem;
             }
         }
 
@@ -41,9 +47,11 @@ min-height: 100vh;
 
 
         p {
-            font-weight: 400;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
             line-height: 1.5;
             margin-top: .5rem;
+            margin-bottom: 6rem;
             
             
 
@@ -56,10 +64,49 @@ min-height: 100vh;
             }
         
             @include mdup {
-                font-size: 1.5rem;
+                font-size: 2.25rem;
             }            
 
 
         }
+
+
+
+        ul {
+            font-family: 'Roboto', sans-serif;
+            list-style-type: none;
+            font-weight: 300;
+            line-height: 1.5;
+            font-size: 1.75rem;
+            margin-top: 3rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10rem;
+            // text-align: left;
+            
+            
+          }
+    
+    
+    
+          li{
+            margin-bottom: 1rem;
+            
+          }
+    
+
+
+
+          a{
+            color: white;
+          }
+
+
+        #current{
+            color: $green;
+        }
+
+
+
     }
 }

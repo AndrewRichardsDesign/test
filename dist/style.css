@@ -211,7 +211,7 @@ a, a:visited, a:hover {
   transition: -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-  background-color: #262626;
+  background-color: #141414;
   padding: 16px 0px 16px 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -273,21 +273,25 @@ a, a:visited, a:hover {
   }
 }
 
+.body {
+  background-color: #141414;
+}
+
 .hero {
-  background-color: white;
-  min-height: 100vh;
+  background-color: #141414;
 }
 
 .hero__text {
   opacity: 1;
-  color: #262626;
+  color: white;
   text-align: center;
 }
 
 .hero__text h1 {
+  font-family: 'Amatic SC', cursive;
   line-height: 1.15;
   font-weight: 700;
-  margin-top: 38vh;
+  margin-top: 30vh;
   margin-bottom: .5rem;
 }
 
@@ -305,14 +309,16 @@ a, a:visited, a:hover {
 
 @media (min-width: 769px) {
   .hero__text h1 {
-    font-size: 5rem;
+    font-size: 12rem;
   }
 }
 
 .hero__text p {
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   line-height: 1.5;
   margin-top: .5rem;
+  margin-bottom: 6rem;
 }
 
 @media (max-width: 768px) {
@@ -329,8 +335,32 @@ a, a:visited, a:hover {
 
 @media (min-width: 769px) {
   .hero__text p {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
   }
+}
+
+.hero__text ul {
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1.75rem;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
+}
+
+.hero__text li {
+  margin-bottom: 1rem;
+}
+
+.hero__text a {
+  color: white;
+}
+
+.hero__text #current {
+  color: #088c2b;
 }
 
 .jobs {
@@ -725,7 +755,8 @@ a, a:visited, a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 0rem;
+  margin: 2rem;
+  background-color: #1a1a1a;
 }
 
 @media (max-width: 1105px) {
@@ -892,7 +923,7 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody #image3 {
-  height: 50rem;
+  height: 40rem;
   width: auto;
   padding-left: 2rem;
   margin-bottom: 1rem;
@@ -1017,10 +1048,18 @@ a, a:visited, a:hover {
   margin-right: auto;
 }
 
+.projectpagebody #imagehomepage {
+  width: 50rem;
+  display: block;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .projectpagebody__text {
   margin-left: 5rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
-  color: black;
+  color: white;
   min-width: 45%;
 }
 
@@ -1044,14 +1083,14 @@ a, a:visited, a:hover {
   font-size: 1.125rem;
   line-height: 1.15;
   font-weight: 500;
-  color: #262626;
+  color: white;
 }
 
 .projectpagebody__text p {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #262626;
+  color: white;
   max-width: 50rem;
   margin-top: 1rem;
 }
@@ -1073,7 +1112,7 @@ a, a:visited, a:hover {
   line-height: 1.15;
   font-weight: 500;
   margin-bottom: 1rem;
-  margin-top: 5rem;
+  margin-top: 15rem;
 }
 
 @media (max-width: 1105px) {
@@ -1104,7 +1143,7 @@ a, a:visited, a:hover {
   -webkit-box-shadow: 0px 0px 0px 2px #cccccc inset;
           box-shadow: 0px 0px 0px 2px #cccccc inset;
   cursor: pointer;
-  color: #262626;
+  color: white;
   display: inline-block;
   font-size: 1rem;
   padding: 16px 32px;

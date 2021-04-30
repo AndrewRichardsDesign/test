@@ -89,6 +89,7 @@ $(document).ready(function(){
 
 
 //fade header
+
 const checkpoint = 350;
 const checkpoint2 = 300;
 
@@ -99,7 +100,7 @@ window.addEventListener("scroll", () => {
   } else {
     opacity = 0;
   }
-  document.querySelector(".hero").style.opacity = opacity;
+  document.querySelector(".hero__text").style.opacity = opacity;
 
 });
 

@@ -4,7 +4,11 @@
     &__flex {
 
         display: flex;
-        margin-bottom: 0rem;
+        margin: 2rem;
+        
+        background-color: $darkGray1;
+        // border: 1px solid $white;
+        
         
     
         @include lgdown {
@@ -257,7 +261,7 @@
 
 //used in responsive images horizontal scroll
     #image3 {
-        height: 50rem;
+        height: 40rem;
         width: auto;
         padding-left: 2rem;
         margin-bottom: 1rem;
@@ -432,6 +436,22 @@
 
 
 
+    #imagehomepage {
+        width: 50rem;
+        display: block;
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        // @include mddown {
+        //     height: 30rem;
+        //     margin-right: 1rem;
+        // }
+
+
+    }
+
+
 
 
 
@@ -450,7 +470,7 @@
     &__text {
         margin-left: 5rem;
         padding: 1rem 1.5rem 1rem 1.5rem;
-        color: black;
+        color: white;
         min-width: 45%;
         
 
@@ -476,7 +496,8 @@
         font-size: 1.125rem;
         line-height: 1.15;
         font-weight: 500;
-        color: $darkGray; 
+        color: white;
+ 
 
         }
 
@@ -484,7 +505,7 @@
         font-size: 1.125rem;
         font-weight: 400;
         line-height: 1.5;
-        color: $darkGray; 
+        color: white;
         max-width: 50rem;
         // margin-right: 5rem;
         margin-top: 1rem;
@@ -519,7 +540,7 @@
     line-height: 1.15;
     font-weight: 500;
     margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-top: 15rem;
 
 
 
@@ -579,7 +600,7 @@
         border-radius:8px;
         box-shadow: 0px 0px 0px 2px $gray inset;
         cursor: pointer;
-        color:$darkGray;            
+        color:$white;            
         display:inline-block;
         font-size: 1rem;
         padding:16px 32px;
