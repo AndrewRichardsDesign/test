@@ -1,4 +1,4 @@
-.body{
+.body {
     background-color: $darkGray0;
 }
 
@@ -23,10 +23,10 @@ background-color: $darkGray0;
          
 
         h1 {
-            font-family: 'Amatic SC', cursive;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.15;
-            font-weight: 700;
-            margin-top: 30vh;
+            font-weight: 400;
+            margin-top: 35vh;
             margin-bottom: .5rem;
 
         
@@ -39,7 +39,7 @@ background-color: $darkGray0;
             }
         
             @include mdup {
-                font-size: 12rem;
+                font-size: 7.5rem;
             }
         }
 
@@ -47,11 +47,14 @@ background-color: $darkGray0;
 
 
         p {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 200;
             line-height: 1.5;
-            margin-top: .5rem;
-            margin-bottom: 6rem;
+            margin-top: 0rem;
+            margin-bottom: 14rem;
+            color: $blue;
+            margin-left: 30rem;
+            margin-right: 30rem; 
             
             
 
@@ -68,12 +71,23 @@ background-color: $darkGray0;
             }            
 
 
+            #lastline{
+                margin-bottom: 14rem;
+            }
+    
+
         }
 
 
 
+
+       
+
+
+
+
         ul {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             list-style-type: none;
             font-weight: 300;
             line-height: 1.5;
@@ -81,17 +95,24 @@ background-color: $darkGray0;
             margin-top: 3rem;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 10rem;
+            margin-bottom: 20rem;
             // text-align: left;
             
             
+
+            
           }
     
-    
+          
+
+        
+
     
           li{
             margin-bottom: 1rem;
             
+
+    
           }
     
 
@@ -99,14 +120,30 @@ background-color: $darkGray0;
 
           a{
             color: white;
+            &:hover {
+                text-decoration: underline 3px $blue;
+                // background-color:$yellow2;
+                // background-clip: content-box;
+            }
+            
+            
           }
 
 
-        #current{
-            color: $green;
+
+
+
+
+        #old{
+            color: $gray;    
         }
 
 
+        #current{
+            color: $yellow5;
+            font-size: 2rem;
+        }
 
+       
     }
 }
