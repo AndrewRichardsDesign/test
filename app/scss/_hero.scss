@@ -118,8 +118,9 @@ background-color: $darkGray0;
 
 
 
-          a{
+          a {
             color: white;
+            
             &:hover {
                 text-decoration: underline 3px $blue;
                 // background-color:$yellow2;

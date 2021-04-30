@@ -77,7 +77,7 @@
           position: relative;
           font-size: $font-sm-med; 
           font-weight: 400;
-          padding: 36px 24px 36px 24px;
+          padding: 36px 24px 34px 24px;
           color: white;
         //   color: $darkGray;
           transition: color 150ms ease-in-out;
@@ -96,7 +96,7 @@
           &:hover {
             transition: all 100ms ease-in-out;
             background-color: $darkGray2;
-            // color: $gray;
+
 
 
               &::before {
@@ -104,6 +104,8 @@
               }
           }
         } 
+
+
 
         @include smmed {
             margin-top: 10px;

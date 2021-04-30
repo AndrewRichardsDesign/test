@@ -245,7 +245,7 @@ a, a:visited, a:hover {
   position: relative;
   font-size: 1rem;
   font-weight: 400;
-  padding: 36px 24px 36px 24px;
+  padding: 36px 24px 34px 24px;
   color: white;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
@@ -774,7 +774,8 @@ a, a:visited, a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 2rem;
-  background-color: #1a1a1a;
+  background-color: #1f1f1f;
+  border-radius: 2px;
 }
 
 @media (max-width: 1105px) {
@@ -1069,35 +1070,29 @@ a, a:visited, a:hover {
 .projectpagebody #imagehomepage {
   width: 50rem;
   display: block;
-  margin-top: 5rem;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
 .projectpagebody__text {
   margin-left: 5rem;
-  padding: 1rem 1.5rem 1rem 1.5rem;
   color: white;
-  min-width: 45%;
   font-family: 'Poppins', sans-serif;
-}
-
-@media (max-width: 1105px) {
-  .projectpagebody__text {
-    margin-left: 0rem;
-  }
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .projectpagebody__text h1 {
-  margin-top: 2rem;
-  margin-bottom: 0rem;
   font-size: 2rem;
   line-height: 1.15;
   font-weight: 500;
 }
 
 .projectpagebody__text h2 {
-  margin-top: 0rem;
   margin-bottom: 2rem;
   font-size: 1.125rem;
   line-height: 1.15;
@@ -1110,7 +1105,6 @@ a, a:visited, a:hover {
   font-weight: 200;
   line-height: 1.5;
   color: white;
-  max-width: 50rem;
   margin-top: 1rem;
 }
 
@@ -1132,7 +1126,6 @@ a, a:visited, a:hover {
   line-height: 1.15;
   font-weight: 400;
   margin-bottom: 1rem;
-  margin-top: 15rem;
 }
 
 @media (max-width: 1105px) {

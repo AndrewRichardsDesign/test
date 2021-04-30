@@ -7,6 +7,7 @@
         margin: 2rem;
         
         background-color: $darkGray1;
+        border-radius: 2px;
         // border: 1px solid $white;
         
         
@@ -439,7 +440,8 @@
     #imagehomepage {
         width: 50rem;
         display: block;
-        margin-top: 5rem;
+        margin-top: auto;
+        margin-bottom: auto;
         margin-left: auto;
         margin-right: auto;
 
@@ -469,22 +471,26 @@
 
     &__text {
         margin-left: 5rem;
-        padding: 1rem 1.5rem 1rem 1.5rem;
+        // padding: 1rem 1.5rem 1rem 1.5rem;
         color: white;
-        min-width: 45%;
+        // min-width: 45%;
         font-family: 'Poppins', sans-serif;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
         
 
 
 
         @include lgdown {
-            margin-left: 0rem;
+            // margin-left: 0rem;
         }
 
 
         h1 {
-        margin-top: 2rem;
-        margin-bottom: 0rem;
+        // margin-top: 2rem;
+        // margin-bottom: 0rem;
         font-size: 2rem;
         line-height: 1.15;
         font-weight: 500;
@@ -492,7 +498,7 @@
 
 
         h2{
-        margin-top: 0rem;
+        // margin-top: 0rem;
         margin-bottom: 2rem;
         font-size: 1.125rem;
         line-height: 1.15;
@@ -507,7 +513,7 @@
         font-weight: 200;
         line-height: 1.5;
         color: white;
-        max-width: 50rem;
+        // max-width: 50rem;
         // margin-right: 5rem;
         margin-top: 1rem;
         }
@@ -542,7 +548,8 @@
     line-height: 1.15;
     font-weight: 400;
     margin-bottom: 1rem;
-    margin-top: 15rem;
+    // margin-top: 30vh;
+    // margin-top: 15rem;
 
 
 
@@ -610,7 +617,7 @@
 
         
     }
-    
+
     .Button:hover {
         background-color: $yellow5;
         box-shadow: 0px 0px 0px 2px $yellow5 inset;
