@@ -41,6 +41,18 @@ background-color: $darkGray0;
             @include mdup {
                 font-size: 7.5rem;
             }
+
+
+            mark.blue {
+                color:$blue;
+                background: none;
+            }
+            
+            // mark.orange {
+            //     color:$orange;
+            //     background: none;
+            // }
+
         }
 
 
@@ -52,11 +64,19 @@ background-color: $darkGray0;
             line-height: 1.5;
             margin-top: 0rem;
             margin-bottom: 14rem;
-            color: $blue;
+            color: $gray;
             margin-left: 30rem;
             margin-right: 30rem; 
+            // margin-left: auto;
+            // margin-right: auto; 
             
-            
+
+
+            mark.yellow {
+                color:$yellow5;
+                background: none;
+            }
+
 
             @include mddown {
                 font-size: 1rem;
@@ -67,21 +87,62 @@ background-color: $darkGray0;
             }
         
             @include mdup {
-                font-size: 2.25rem;
+                font-size: 2rem;
             }            
 
 
-            #lastline{
-                margin-bottom: 14rem;
-            }
+            // #lastline{
+            //     margin-bottom: 14rem;
+            // }
     
 
+            // mark.blue {
+            //     color:$blue;
+            //     background: none;
+            // }
+            
+            // mark.orange {
+            //     color:$orange;
+            //     background: none;
+            // }
+
+            // mark.purple {
+            //     color:$purple;
+            //     background: none;
+            // }
+           
+            
+           
         }
 
 
 
 
-       
+        #companies{
+            color: $blue;
+            font-weight: 400;
+            margin-top: 10rem;
+            margin-bottom: 0rem;
+            margin-left: auto;
+            margin-right: auto;
+
+
+
+            @include mddown {
+                font-size: 2rem;
+            }
+
+            @include sm {
+                font-size: 2rem;
+            }
+        
+            @include mdup {
+                font-size: 2rem;
+            }    
+
+
+        }
+
 
 
 
@@ -92,7 +153,7 @@ background-color: $darkGray0;
             font-weight: 300;
             line-height: 1.5;
             font-size: 1.75rem;
-            margin-top: 3rem;
+            margin-top: 1rem;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 20rem;
@@ -123,6 +184,7 @@ background-color: $darkGray0;
             
             &:hover {
                 text-decoration: underline 3px $blue;
+                
                 // background-color:$yellow2;
                 // background-clip: content-box;
             }

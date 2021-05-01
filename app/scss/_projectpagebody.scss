@@ -1,3 +1,6 @@
+
+
+
 .projectpagebody {
     
 
@@ -470,15 +473,14 @@
 
 
     &__text {
-        margin-left: 5rem;
-        // padding: 1rem 1.5rem 1rem 1.5rem;
-        color: white;
-        // min-width: 45%;
         font-family: 'Poppins', sans-serif;
+        color: white;
+        margin-left: 5rem;
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 10%;
         margin-bottom: 10%;
+        // min-width: 45%;
         
 
 
@@ -491,6 +493,7 @@
         h1 {
         // margin-top: 2rem;
         // margin-bottom: 0rem;
+        font-weight: 400;
         font-size: 2rem;
         line-height: 1.15;
         font-weight: 500;
@@ -499,10 +502,10 @@
 
         h2{
         // margin-top: 0rem;
+        font-weight: 200;
         margin-bottom: 2rem;
         font-size: 1.125rem;
         line-height: 1.15;
-        font-weight: 200;
         color: white;
  
 
@@ -543,10 +546,9 @@
 
 
    &__title {
-    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 3rem;
     line-height: 1.15;
-    font-weight: 400;
     margin-bottom: 1rem;
     // margin-top: 30vh;
     // margin-top: 15rem;
@@ -621,6 +623,8 @@
     .Button:hover {
         background-color: $yellow5;
         box-shadow: 0px 0px 0px 2px $yellow5 inset;
+        color: $darkGray0;
+        // font-weight: 400;
         
 
     }

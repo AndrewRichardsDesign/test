@@ -26,10 +26,7 @@
         right: 0;
         z-index: 2;
         transition: transform .3s cubic-bezier(0.86, 0, 0.07, 1);
-        // background-color: $white;
         background-color: $darkGray0;
-        // padding-top: 1.0625rem;
-        // padding-bottom: 1.0625rem;
         padding: 16px 0px 16px 20px;
         align-items: center;
         justify-content: space-between;
@@ -61,8 +58,7 @@
             margin-left: 1rem;
             width: 50px;
             height: auto;
-            // width: 64px;
-            // height: 50px;
+            
         }
 
 
@@ -74,13 +70,13 @@
 
 
         a {
-          position: relative;
-          font-size: $font-sm-med; 
-          font-weight: 400;
-          padding: 36px 24px 34px 24px;
-          color: white;
-        //   color: $darkGray;
-          transition: color 150ms ease-in-out;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: $font-sm-med; 
+        position: relative;
+        padding: 32px 24px 32px 24px;
+        color: white;
+        transition: color 150ms ease-in-out;
 
           
         @include smmed {

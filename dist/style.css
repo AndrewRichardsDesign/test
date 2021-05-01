@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 .has-fade {
   visibility: hidden;
 }
@@ -85,7 +85,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   font-weight: 300;
@@ -98,11 +98,11 @@ body.noscroll {
 }
 
 body ::-moz-selection {
-  background: #ffbb00;
+  background: #6a80fb;
 }
 
 body ::selection {
-  background: #ffbb00;
+  background: #6a80fb;
 }
 
 h1, h2, h3 {
@@ -242,10 +242,11 @@ a, a:visited, a:hover {
 }
 
 .header__links a {
-  position: relative;
-  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  padding: 36px 24px 34px 24px;
+  font-size: 1rem;
+  position: relative;
+  padding: 32px 24px 32px 24px;
   color: white;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
@@ -314,15 +315,25 @@ a, a:visited, a:hover {
   }
 }
 
+.hero__text h1 mark.blue {
+  color: #6a80fb;
+  background: none;
+}
+
 .hero__text p {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   line-height: 1.5;
   margin-top: 0rem;
   margin-bottom: 14rem;
-  color: #6a80fb;
+  color: #cccccc;
   margin-left: 30rem;
   margin-right: 30rem;
+}
+
+.hero__text p mark.yellow {
+  color: #edb62c;
+  background: none;
 }
 
 @media (max-width: 768px) {
@@ -339,12 +350,35 @@ a, a:visited, a:hover {
 
 @media (min-width: 769px) {
   .hero__text p {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 }
 
-.hero__text p #lastline {
-  margin-bottom: 14rem;
+.hero__text #companies {
+  color: #6a80fb;
+  font-weight: 400;
+  margin-top: 10rem;
+  margin-bottom: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .hero__text #companies {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .hero__text #companies {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero__text #companies {
+    font-size: 2rem;
+  }
 }
 
 .hero__text ul {
@@ -353,7 +387,7 @@ a, a:visited, a:hover {
   font-weight: 300;
   line-height: 1.5;
   font-size: 1.75rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20rem;
@@ -1077,9 +1111,9 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody__text {
-  margin-left: 5rem;
-  color: white;
   font-family: 'Poppins', sans-serif;
+  color: white;
+  margin-left: 5rem;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 10%;
@@ -1087,16 +1121,17 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody__text h1 {
+  font-weight: 400;
   font-size: 2rem;
   line-height: 1.15;
   font-weight: 500;
 }
 
 .projectpagebody__text h2 {
+  font-weight: 200;
   margin-bottom: 2rem;
   font-size: 1.125rem;
   line-height: 1.15;
-  font-weight: 200;
   color: white;
 }
 
@@ -1121,10 +1156,9 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody__title {
-  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   font-size: 3rem;
   line-height: 1.15;
-  font-weight: 400;
   margin-bottom: 1rem;
 }
 
@@ -1167,6 +1201,7 @@ a, a:visited, a:hover {
   background-color: #edb62c;
   -webkit-box-shadow: 0px 0px 0px 2px #edb62c inset;
           box-shadow: 0px 0px 0px 2px #edb62c inset;
+  color: #141414;
 }
 
 .projectpagebody .Button:active {
